@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>亿旗-产品中心</title>
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/product-center.css">
+    <link rel="stylesheet" href="css/treeview.css">              
+</head>
+<body oncontextmenu = "return false" oncopy = "return false" onselectstart = "return false">
+    <!--header导航栏-->
+    <nav id="header" class="header">
+        <div class="logo"></div>
+        
+        <ul id="navbar" class="navbar">
+            <li class="active"><a href="main.html">首页</a></li>
+            <!--产品中心下拉菜单-->
+            <li id="prodct-page" class="dropdown">
+                <a class="dropdown-toggle" href="product-center.html" data-toggle="dropdown" aria-expanded="true">产品中心<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="product-center.html#mulitary" style="color: grey;">军工加固设备</a></li>
+                    <li><a class="dropdown-item" href="product-center.html#highspeed-platform" style="color: grey;">高速计算平台</a></li>
+                    <li><a class="dropdown-item" href="product-center.html#3D" style="color: grey;">3D智能</a></li>
+                    <li><a class="dropdown-item" href="product-center.html#highspeed-processor" style="color: grey;">高速处理板</a></li>
+                    <li><a class="dropdown-item" href="product-center.html#显控板类" style="color: grey;">显控板</a></li>
+                </ul>
+            </li>
+            <!--解决方案下拉菜单-->
+            <li id="solution-page" class="dropdown">
+                <a class="dropdown-toggle" href="solutions.html" data-toggle="dropdown" aria-expanded="true">解决方案<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="solutions.html#mulitary" style="color: grey;">军工加固设备方案</a></li>
+                    <li><a class="dropdown-item" href="solutions.html#UAV" style="color: grey;">无人机应用方案</a></li>
+                    <li><a class="dropdown-item" href="solutions.html#electricity" style="color: grey;">电力设计方案</a></li>
+                    <li><a class="dropdown-item" href="solutions.html#camera" style="color: grey;">3D智能相机</a></li>
+                    <li><a class="dropdown-item" href="solutions.html#graphic" style="color: grey;">高速图像处理</a></li>
+                    <li><a class="dropdown-item" href="solutions.html#GIS" style="color: grey;">GIS系统方案</a></li>
+                </ul>
+            </li>
+            <li><a href="about-us.html">关于我们</a></li>
+            <li><a href="#footer">联系我们</a></li>
+        </ul>
+        <button style="background-color: transparent;" id="menuIcon" type="button" class="btn btn-lg" onclick="navbarToggle()">
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
+    </nav>
+    <!--hero-image大头图-->
+    <div class="hero-image">
+        <div>
+            <h3>致力于军工加固计算机等产品的研发、设计、制造和销售。</h3>
+            <h3 style="overflow-y: hidden;">为客户提供一体化解决方案和产品交付，能适用于各种恶劣环境条件，广泛应用于机载、舰载、车载、弹载、地面站等平台。</h3>
+        </div>
+    </div>
+    <!--path-nav路径导航-->
+    <div class="path-nav">
+        <ol class="breadcrumb" style="padding-top:1.5vw; padding-left: 16.5vw; background-color:rgb(197, 214, 224);">
+            <li><a href="#">首页</a></li>
+            <li class="active">产品中心</li>
+        </ol>
+    </div>
+    <!--product-container产品中心-->
+    <div class="product-container">
+        <!--catalogue目录-->
+        <div class="row catalogue">
+            <div class="col-md-2">
+                <div class="panel-group table-responsive" role="tablist">
+                    <!--军工加固设备-->
+                    <div class="panel leftMenu">
+                        <!--类别标题-->
+                        <!-- 利用data-target指定要折叠的分组列表 -->
+                        <div class="panel-heading" id="collapseListGroupHeading1" data-toggle="collapse" data-target="#collapseListGroup1" role="tab" >
+                                <button data-toggle="tab" href="#mulitary" class="panel-title">
+                                    军工加固设备
+                                    <span class="glyphicon glyphicon-chevron-down right"></span>
+                                </button>
+                        </div>
+                        <!-- 类别内容-->
+                        <!-- .panel-collapse和.collapse标明折叠元素 .in表示要显示出来 -->
+                        <div id="collapseListGroup1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="collapseListGroupHeading1">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <button id="24.5英寸加固显示器" onclick="showModal('news-item-1-1','24.5英寸加固显示器')" class="menu-item-left">
+                                            <p>24.5英寸加固显示器</p>
+                                        </button>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <button id="便携式数据处理终端" onclick="showModal('news-item-1-2','便携式数据处理终端')" class="menu-item-left">
+                                            <p>便携式数据处理终端</p>
+                                        </button>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <button id="军用锂电池-25Ah" onclick="showModal('news-item-1-3','军用锂电池-25Ah')" class="menu-item-left">
+                                            <p>军用锂电池-25Ah</p>
+                                        </button>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <button id="军用锂电池箱-75Ah" onclick="showModal('news-item-1-4','军用锂电池箱-75Ah')" class="menu-item-left">
+                                            <p>军用锂电池箱-75Ah</p>
+                                        </button>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <button id="加固笔记本" onclick="showModal('news-item-1-5','加固笔记本')" class="menu-item-left">
+                                            <p>加固笔记本</p>
+                                        </button>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <button id="数据处理终端" onclick="showModal('news-item-1-6','数据处理终端')" class="menu-item-left">
+                                            <p>数据处理终端</p>
+                                        </button>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                    <!--高速计算平台-->
+                    <div class="panel leftMenu">
+                        <!--类别标题-->
+                        <div class="panel-heading" id="collapseListGroupHeading2" data-toggle="collapse" data-target="#collapseListGroup2" role="tab" >
+                            <button data-toggle="tab" href="#highspeed-platform" class="panel-title">
+                                高速计算平台
+                                <span class="glyphicon glyphicon-chevron-right right"></span>
+                            </button>
+                        </div>
+                        <!--类别内容-->
+                        <div id="collapseListGroup2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading2">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <button id="边缘计算平台" onclick="showModal('news-item-2-2','边缘计算平台')" class="menu-item-left">
+                                            <p>边缘计算平台</p>
+                                        </button>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                    <!--3D智能-->
+                    <div class="panel leftMenu">
+                        <!--类别标题-->
+                        <div class="panel-heading" id="collapseListGroupHeading3" data-toggle="collapse" data-target="#collapseListGroup3" role="tab" >
+                            <button data-toggle="tab" href="#3D" class="panel-title">
+                                3D智能
+                                <span class="glyphicon glyphicon-chevron-right right"></span>
+                            </button>
+                        </div>
+                        <!--类别内容-->
+                        <div id="collapseListGroup3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading3">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <button id="3D深度相机" onclick="showModal('news-item-3-1','3D深度相机')" class="menu-item-left">
+                                            <p>3D深度相机</p>
+                                        </button>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>   
+                    <!--高速处理板-->
+                    <div class="panel leftMenu">
+                        <!--类别标题-->
+                        <div class="panel-heading" id="collapseListGroupHeading4" data-toggle="collapse" data-target="#collapseListGroup4" role="tab" >
+                            <button data-toggle="tab" href="#highspeed-processor" class="panel-title">
+                                高速处理板
+                                <span class="glyphicon glyphicon-chevron-right right"></span>
+                            </button>
+                        </div>
+                        <!--类别内容-->
+                        <div id="collapseListGroup4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading4">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <button id="TMS320C6678" onclick="showModal('news-item-4-3','TMS320C6678')" class="menu-item-left">
+                                            <p>TMS320C6678高速信号处理板</p>
+                                        </button>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <button id="EF6678" onclick="showModal('news-item-4-2','EF6678')" class="menu-item-left">
+                                            <p>EF6678图像处理系统</p>
+                                        </button>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <button id="EF-K7+EF6678" onclick="showModal('news-item-4-4','EF-K7+EF6678')" class="menu-item-left">
+                                            <p>EF-K7+EF6678板卡</p>
+                                        </button>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <button id="EF-K7-TMS320C667" onclick="showModal('news-item-4-5','EF-K7-TMS320C667')" class="menu-item-left">
+                                            <p>EF-K7-TMS320C667板卡</p>
+                                        </button>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <button id="数据记录系统板" onclick="showModal('news-item-4-6','数据记录系统板')" class="menu-item-left">
+                                            <p>数据记录系统板</p>
+                                        </button>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <button id="叠加显示系统板" onclick="showModal('news-item-4-7','叠加显示系统板')" class="menu-item-left">
+                                            <p>多路视频叠加显示系统板</p>
+                                        </button>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div> 
+                     <!--显控板-->
+                    <div class="panel leftMenu">
+                        <!--类别标题-->
+                        <div class="panel-heading" id="collapseListGroupHeading4" data-toggle="collapse" data-target="#collapseListGroup5" role="tab" >
+                            <button data-toggle="tab" href="#display-control" class="panel-title">
+                                显控板
+                                <span class="glyphicon glyphicon-chevron-right right"></span>
+                            </button>
+                        </div>
+                        <!--类别内容-->
+                        <div id="collapseListGroup5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading4">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <button id="显控板" onclick="showModal('news-item-5-1','显控板')" class="menu-item-left">
+                                            <p>显控板</p>
+                                        </button>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <button id="国产化显控板" onclick="showModal('news-item-5-2','国产化显控板')" class="menu-item-left">
+                                            <p>国产化显控板</p>
+                                        </button>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!--product-card产品卡片-->
+        <div id="product" class="tab-content">
+            <div id="mulitary" class="row tab-pane fade active in">
+                <div class="col-sm-6 col-md-6">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="card24.5英寸加固显示器" onclick="showModal('news-item-1-1','card24.5英寸加固显示器')"><img style="width:97%; cursor: pointer;" src="css/image/product/军工加固设备/加固显示器.png"></a>
+                        <div class="caption">
+                            <h3>24.5英寸加固显示器</h3>
+                            <p>TFT_LCD 24.5吋显示屏</p>
+                            <p>1920*1080分辨率</p>
+                            <p>不低于50000小时的平均寿命</p>
+                            <p>不大于13KG的重量</p>
+                            <p><a id="了解更多-24.5英寸加固显示器" onclick="showModal('news-item-1-1','了解更多-24.5英寸加固显示器')" class="btn btn-primary" role="button">了解更多</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                   <!--缩略图-->
+                   <div class="card thumbnail">
+                        <a id="card便携式数据处理终端" onclick="showModal('news-item-1-2','card便携式数据处理终端')"><img style="cursor: pointer;" src="css/image/product/军工加固设备/便携式数据处理终端.png"></a>
+                        <div class="caption">
+                            <h3>便携式数据处理终端</h3>
+                            <p>便携式数据处理终端专业为客户定制的具备高计算能力的、高可靠性的数据处理终端，具备不低于Intel I7 6代处理器计算能力，支持Windows7操作系统。</p>
+                            <p><a id="了解更多-便携式数据处理终端" onclick="showModal('news-item-1-2','了解更多-便携式数据处理终端')" class="btn btn-primary" role="button">了解更多</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="25Ah-军用锂电池" onclick="showModal('news-item-1-3','25Ah-军用锂电池')"><img style="margin-top:4vw; width:15vw;cursor: pointer;" src="css/image/product/军工加固设备/无标题.png"></a>
+                        <div class="caption" style="margin-top: 2vw;">
+                            <h3>军用锂电池-25Ah</h3>
+                            <p>标称电压25.6V</p>
+                            <p>标称容量25Ah</p>
+                            <p><a id="了解更多-25Ah-军用锂电池" onclick="showModal('news-item-1-3','了解更多-25Ah-军用锂电池')" class="btn btn-primary" role="button">了解更多</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="75Ah-军用锂电池箱" onclick="showModal('news-item-1-4','75Ah-军用锂电池箱')"><img style="width:30.5%;cursor: pointer;" src="css/image/product/军工加固设备/无标题2.png"></a>
+                        <div class="caption">
+                            <h3>军用锂电池箱-75Ah</h3>
+                            <p>标称电压25.6V</p>
+                            <p>标称容量75Ah</p>
+                            <p><a id="了解更多-75Ah-军用锂电池箱" onclick="showModal('news-item-1-4','了解更多-75Ah-军用锂电池箱')" class="btn btn-primary" role="button">了解更多</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="card加固笔记本" onclick="showModal('news-item-1-5','card加固笔记本')"><img style="width:46.5%;cursor: pointer;" src="css/image/product/军工加固设备/加固笔记本.png"></a>
+                        <div class="caption">
+                            <h3>加固笔记本</h3>
+                            <p>15.6英寸FHD屏 最大分辨率1920*1080</p>
+                            <p>标配i7-8550U处理器</p>
+                            <p>标配16GB DDR4 内存</p>
+                            <p><a id="了解更多-加固笔记本" onclick="showModal('news-item-1-5','了解更多-加固笔记本')" class="btn btn-primary" role="button">了解更多</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="card数据处理终端" onclick="showModal('news-item-1-6','card数据处理终端')"><img style="width:51.75%;cursor: pointer;" src="css/image/product/军工加固设备/数据处理终端.png"></a>
+                        <div class="caption">
+                            <h3>数据处理终端</h3>
+                            <p>数据处理终端专业为客户定制的具备高计算能力的、高可靠性的数据处理终端，具备不低于Intel I7 6代处理器计算能力，支持Windows7操作系统。</p>
+                            <p><a id="了解更多-数据处理终端" onclick="showModal('news-item-1-6','了解更多-数据处理终端')" class="btn btn-primary" role="button">了解更多</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="highspeed-platform" class="row tab-pane fade">
+                <div class="col-sm-6 col-md-6">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="card边缘计算平台" onclick="showModal('news-item-2-2','card边缘计算平台')"><img style="width:50.5%;cursor: pointer;" src="css/image/product/高速计算平台/边缘计算平台.png"></a>
+                        <div class="caption">
+                            <h3>边缘计算平台</h3>
+                            <p>符合OpenVPX标准</p>
+                            <p>架构为CPU+GPU+FPGA，提供BSP支持二次开发</p>
+                            <p>整机计算能力应大于1TFLOPS；</p>
+                            <p><a id="了解更多-边缘计算平台" onclick="showModal('news-item-2-2','了解更多-边缘计算平台')" class="btn btn-primary" role="button">了解更多</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="3D" class="row tab-pane fade">
+                <div class="col-sm-6 col-md-6">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="card3D深度相机" onclick="showModal('news-item-3-1','card3D深度相机')"><img style="width: 40%;" src="css/image/product/3D深度相机/camera-1.png"></a>
+                        <div class="caption">
+                            <h3>3D 深度相机</h3>
+                            <p>配备光谱 850nm或945nm的激光光源，通过一次拍摄可生成2D和3D数据，凭借其集成的 LASER 光源，使相机不依赖于环境光，甚至在黑暗环境中亦可使用。</p>
+                            <p><a id="了解更多-3D深度相机" onclick="showModal('news-item-3-1','了解更多-3D深度相机')" class="btn btn-primary" role="button">了解更多</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="highspeed-processor" class="row tab-pane fade">
+                <!--待定-->
+                <div class="col-sm-6 col-md-6">
+                    <div class="card thumbnail">
+                        <a id="cardEF6678" onclick="showModal('news-item-4-3','cardEF6678')"><img style="width: 55%;" src="css/image/product/高速处理器/图像处理系统.png"></a>
+                        <div class="caption">
+                            <h3>EF6678 图像处理系统板</h3>
+                            <p>面向嵌入式微型化工业视觉领域，主CPU采用8核DSP处理器TMS320C6678具有10G处理能力，支持 Basler/Dalsa 等国际主流CameraLink、 Gige 相机的全速接入</p>
+                            <p><a id="了解更多-EF6678" onclick="showModal('news-item-4-3','了解更多-EF6678')" class="btn btn-primary" role="button">了解更多</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="cardTMS320C6678" onclick="showModal('news-item-4-2','cardTMS320C6678')"><img style="width: 45%;" src="css/image/product/高速处理器/高速处理信号板.png"></a>
+                        <div class="caption">
+                            <h3>TMS320C6678高速处理信号板</h3>
+                            <p>TMS320C6678信号处理板是一款6U OpenVPX板卡，符合VITA 65系统规范</p>
+                            <p><a id="了解更多-TMS320C6678" onclick="showModal('news-item-4-2','了解更多-TMS320C6678')" class="btn btn-primary" role="button">了解更多</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="cardEF-K7+EF6678" onclick="showModal('news-item-4-4','cardEF-K7+EF6678')"><img style="width: 63%;" src="css/image/product/高速处理器/EF-K7+EF6678板卡.png"></a>
+                        <div class="caption">
+                            <h3>EF-K7+EF6678 板卡</h3>
+                            <p>面向嵌入式微型化视觉图像领域，DSP 采用 TI 公司最新一代 Keystone 多核 C66x 系列 TMS320C6678，具有 10G 处理能力；FPGA 采用 Xilinx 公司的 Kintex-7（K7）系列 XC7K325T-2FFG900I，具有 326,080逻辑单元。</p>
+                            <p><a id="了解更多-EF-K7+EF6678" onclick="showModal('news-item-4-4','了解更多-EF-K7+EF6678')" class="btn btn-primary" role="button">了解更多</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="cardEF-K7-TMS320C667" onclick="showModal('news-item-4-5','cardEF-K7-TMS320C667')"><img style="width: 40%;" src="css/image/product/高速处理器/EF-K7-TMS320C667 板卡.png"></a>
+                        <div class="caption">
+                            <h3>EF-K7-TMS320C667 板卡</h3>
+                            <p>面向高速视觉图像处理领域，DSP采用TI公司最新一代 Keystone 多核C66x系列TMS320C6678，具有 10G 处理能力；FPGA采用Xilinx公司的 Kintex-7（K7）系列XC7K160TFBG676PKG，具有 162,240 逻辑单元</p>
+                            <p><a id="了解更多-EF-K7-TMS320C667" onclick="showModal('news-item-4-5','EF-K7-TMS320C667')" class="btn btn-primary" role="button">了解更多</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="card数据记录系统板" onclick="showModal('news-item-4-6','card数据记录系统板')"><img style="width: 63.5%;" src="css/image/product/高速处理器/数据记录系统.png"></a>
+                        <div class="caption">
+                            <h3>数据记录系统板</h3>
+                            <p>数据记录系统可以在高速飞行、高频振动、高冲击、爆炸、重返大气层、深水、湿热、干燥、强噪声、强辐射等环境中可靠的完成多种数据的采集工作</p>
+                            <p><a id="了解更多-数据记录系统板" onclick="showModal('news-item-4-6','了解更多-数据记录系统板')" class="btn btn-primary" role="button">了解更多</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="card多路视频叠加显示系统" onclick="showModal('news-item-4-7','card多路视频叠加显示系统')"><img style="width: 50%;" src="css/image/product/高速处理器/多路视频叠加显示系统.png"></a>
+                        <div class="caption">
+                            <h3>多路视频叠加显示系统</h3>
+                            <p>多路视频叠加显示系统是一款应用于工业、军工领域的高清视频显示设备，适合于多路高清视频画中画显示、画面拼接显示等多功能显示应用</p>
+                            <p><a id="了解更多-多路视频叠加显示系统" onclick="showModal('news-item-4-7','了解更多-多路视频叠加显示系统')" class="btn btn-primary" role="button">了解更多</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="display-control" class="row tab-pane fade">
+                <div class="col-sm-6 col-md-6">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="card显控板" onclick="showModal('news-item-5-1','card显控板')"><img style="width: 40%;" src="css/image/product/显控板/显控板.png"></a>
+                        <div class="caption">
+                            <h3>显控板</h3>
+                            <p><a id="了解更多-显控板" onclick="showModal('news-item-5-1','了解更多-显控板')" class="btn btn-primary" role="button">了解更多</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="card国产化显控板" onclick="showModal('news-item-5-2','card国产化显控板')"><img style="width: 58.5%;" src="css/image/product/显控板/国产化显控板.png"></a>
+                        <div class="caption">
+                            <h3>国产化显控板</h3>
+                            <p><a id="了解更多-国产化显控板" onclick="showModal('news-item-5-2','了解更多-国产化显控板')" class="btn btn-primary" role="button">了解更多</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--模态框-->
+        <div id="news-item-1-1" class="modal">
+            <!--模态框内容-->
+            <div class="modal-content">                 
+                <div class="product-header">
+                    <p style="margin-left: 90%; color:silver">点击框外即可退出</p>
+                    <h2 style="text-align: center;"><strong>24.5英寸加固显示器</strong></h2>
+                </div>
+                <hr>
+                <div class="container">
+                    <div id="introduction">
+                        <div class="text">
+                            <img style="width: 30%; margin-left: 35%;" src="css/image/product/军工加固设备/加固显示器.png">
+                            <p>北京亿旗创新科技发展有限公司推出高性能加固显示器，采用全金属外壳结构，表面采用防刮涂层处理，内部增加橡胶夹层保护，显示器具备一定初级加固能力，抗振能力。振动等级可达振动频率范围5Hz-16Hz,单振幅位移1mm,振动频率范围16Hz-60Hz,加速度1g下纵轴方向振动20min.</p>
+                <img src="css/image/solution/加固显示器/加固显示器-2.png" style="margin-left:15vw;width: 50%;">
+                        </div>
+                    </div>
+                    <hr>
+                    <table class="table">
+                        <h3 style="text-align: left;"><strong>主要技术参数</strong></h3>
+                        <thead>
+                            <tr>
+                                <th>项目名称</th>
+                                <th>硬件参数</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>屏幕</td>
+                                <td>TFT_LCD 24.5吋显示屏</td>
+                            </tr>
+                            <tr>
+                                <td>分辨率</td>
+                                <td>1920*1080</td>
+                            </tr>
+                            <tr>
+                                <td>可视角度</td>
+                                <td>水平±85°，垂直±80°<td>
+                            </tr>
+                            <tr>
+                                <td>亮度</td>
+                                <td>400(nits)</td>
+                            </tr>
+                            <tr>
+                                <td>对比度</td>
+                                <td>1000:1 </td>
+                            </tr>
+                            <tr>
+                                <td>响应时间</td>
+                                <td>1ms</td>
+                            </tr>
+                            <tr>
+                                <td>背光</td>
+                                <td>4个CCFL，侧射式</td>
+                            </tr>
+                            <tr>
+                                <td>喇叭</td>
+                                <td>双声道，功耗5W</td>
+                            </tr>
+                            <tr>
+                                <td>平均寿命</td>
+                                <td>不低于50000小时</td>
+                            </tr>
+                            <tr>
+                                <td>功耗</td>
+                                <td>不大于80W</td>
+                            </tr>
+                            <tr>
+                                <td>总重量</td>
+                                <td>不大于13KG</td>
+                            </tr>
+                            <tr>
+                                <td>工作温度</td>
+                                <td>-20℃～+55℃</td>
+                            </tr>
+                            <tr>
+                                <td>贮存温度</td>
+                                <td>-50℃～+65℃</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <img style="margin-left: 13vw; width: 70%;" src="css/image/product/军工加固设备/加固显示器-2.png">
+                    <table class="table">
+                        <h3 style="text-align: left;"><strong>接口类型见下表</strong></h3>
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>接口类型</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>接口供电（DC24V）</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>视频接口</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>音频接口</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="news-item-1-2" class="modal">
+            <!--模态框内容-->
+            <div class="modal-content">                 
+                <div class="product-header">
+                    <p style="margin-left: 90%; color:silver">点击框外即可退出</p>
+                    <h2 style="text-align: center;"><strong>便携式数据处理终端</strong></h2>
+                </div>
+                <hr>
+                <div class="container">
+                    <div id="introduction">
+                        <div class="text">
+                            <img style="width: 50%; margin-left: 15vw;" src="css/image/product/军工加固设备/便携式数据处理终端.png">
+                            <p>便携式数据处理终端专业为客户定制的具备高计算能力的、高可靠性的数据处理终端，具备不低于Intel I7 6代处理器计算能力，支持Windows7操作系统。</p>
+                            <p>便携式数据处理终端屏幕显示具备户外强光下可视功能，采用交流220V和锂电池两种供电方式，具备接入专用POE无线数据传输功能。数据处理设备采用高抗冲箱体结构，内部采用铝合金结构设计，整机结构稳定可靠，抗震性能强。箱体外观采购军绿色，箱体内部采用的双散热风扇的设计。数据处理设备配有专用背包，便于搬运和移动。背包外观采用迷彩图案。</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <table class="table">
+                        <h3 style="text-align: left;"><strong>主要技术参数</strong></h3>
+                        <thead>
+                            <tr>
+                                <th>项目</th>
+                                <th>硬件参数</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CPU</td>
+                                <td>Intel® Core™ i7-6700 Processor</td>
+                            </tr>
+                            <tr>
+                                <td>内存</td>
+                                <td>32GB DDR4 内存</td>
+                            </tr>
+                            <tr>
+                                <td>硬盘</td>
+                                <td>1T固态硬盘</td>
+                            </tr>
+                            <tr>
+                                <td>显示</td>
+                                <td>Intel® HD Graphics 530显卡</td>
+                            </tr>
+                            <tr>
+                                <td>以太网控制器</td>
+                                <td>百兆/千兆自适应</td>
+                            </tr>
+                            <tr>
+                                <td>屏幕尺寸</td>
+                                <td>15.6"</td>
+                            </tr>
+                            <tr>
+                                <td>分辨率</td>
+                                <td>1920×1080</td>
+                            </tr>
+                            <tr>
+                                <td>亮度</td>
+                                <td>1000 cd/m2（Typ.），满足户外阳光下工作需要</td>
+                            </tr>
+                            <tr>
+                                <td>对比度</td>
+                                <td>1000（Typ.）</td>
+                            </tr>
+                            <tr>
+                                <td>系统整机功耗</td>
+                                <td>不大于120W；</td>
+                            </tr>
+                            <tr>
+                                <td>供电类型</td>
+                                <td>交流220V和内置锂电池供电；</td>
+                            </tr>
+                            <tr>
+                                <td>电池标称电压</td>
+                                <td>25.6V；</td>
+                            </tr>
+                            <tr>
+                                <td>电池额定容量</td>
+                                <td>25000mAh；</td>
+                            </tr>
+                            <tr>
+                                <td>电池供电工作时长</td>
+                                <td>不低于4个小时；</td>
+                            </tr>
+                            <tr>
+                                <td>电池充电时间</td>
+                                <td>4～5个小时；</td>
+                            </tr>
+                            <tr>
+                                <td>工作温度</td>
+                                <td>-20℃～+60℃；</td>
+                            </tr>
+                            <tr>
+                                <td>贮存温度</td>
+                                <td>-40℃～+70℃；</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="news-item-1-3" class="modal">
+            <div class="modal-content">                 
+                <div class="product-header">
+                    <p style="margin-left: 90%; color:silver">点击框外即可退出</p>
+                    <h3 style="text-align: center;"><strong>军工加固设备（军用锂电池)</strong></h3>
+                </div>
+                <hr>
+                <div class="container">
+                    <div id="introduction">
+                        <h3><strong style="color:rgb(0, 119, 109);">军用锂电池</strong></h3>
+                        <div id="title" style="width: 100%; text-align: left;">
+                            <h3 style="width:20%; background-color: rgb(0, 119, 109);"><strong style="color: white;">产品特点：</strong></h3>
+                        </div>
+                        <div id="introduction-text" style="margin-left:7vw;text-align: left">
+                            <p> 标称电压25.6V。</p>
+                            <p> 标称容量25Ah。</p>
+                            <p> 电池组整体过压、欠压保护，电池单节过压、欠压保护。</p>
+                            <p> 短路保护。</p>
+                            <p> 充放电过流保护。充放电温度保护(高温、低温)。充电限流功能。可显示电池组电量。</p>
+                            <p> 安全、低温放电性能好。</p>
+                            <p> 防震防水：通过壳体内部填充防震结构，可承受高冲击力，达到高安全，高可靠的要求；</p>
+                            <p> 快速可靠连接，采用推拉自锁航空连接器，快捷，安全，可靠。</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="product-item" id="battery">
+                        <div id="product-sample">
+                          <img style="width: 50%;" src="css/image/product/军工加固设备/无标题.png">
+                        </div>
+                        <table class="table table-striped table-responsive">
+                          <caption style="font-size:large;text-align: center;">25Ah-军用锂电池</caption>
+                          <thead>
+                            <tr>
+                              <th>项目</th>
+                              <th>参数</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>额定电压（V）</td>
+                              <td>25.6</td>
+                            </tr>
+                            <tr>
+                              <td>额定容量（Ah）</td>
+                              <td>25</td>
+                            </tr>
+                            <tr>
+                              <td>标准充电电压（V）</td>
+                              <td>29.4</td>
+                            </tr>
+                            <tr>
+                              <td>工作电压范围（V）</td>
+                              <td>21~29.4</td>
+                            </tr>
+                            <tr>
+                              <td>输入输出接口</td>
+                              <td>同口</td>
+                            </tr>
+                            <tr>
+                              <td>充电限流（A）</td>
+                              <td>10</td>
+                            </tr>
+                            <tr>
+                              <td>过流保护电流（A）</td>
+                              <td>30±5</td>
+                            </tr>
+                            <tr>
+                              <td>最大持续放电电流（A）</td>
+                              <td>16</td>
+                            </tr>
+                            <tr>
+                              <td>充电温度保护（℃）</td>
+                              <td>低温0℃，高温45摄氏度</td>
+                            </tr>
+                            <tr>
+                              <td>放点最高温度保护（℃）</td>
+                              <td>60</td>
+                            </tr>
+                            <tr>
+                              <td>放电最低温度保护（℃）</td>
+                              <td>-40</td>
+                            </tr>
+                            <tr>
+                              <td>显示界面</td>
+                              <td>LED分段电量显示</td>
+                            </tr>
+                            <tr>
+                              <td>循环次数</td>
+                              <td>≥400</td>
+                            </tr>
+                            <tr>
+                              <td>防护等级</td>
+                              <td>IP65</td>
+                            </tr>
+                            <tr>
+                              <td>工作温度</td>
+                              <td>放电-30℃~+55℃，充电0℃~+45℃</td>
+                            </tr>
+                            <tr>
+                              <td>贮存温度</td>
+                              <td>-40℃~+60℃</td>
+                            </tr>
+                            <tr>
+                              <td>月自放电率</td>
+                              <td>＜4</td>
+                            </tr>
+                            <tr>
+                              <td>重量（kg）/尺寸</td>
+                              <td>≤4.1kg/200*170*90mm</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div id="news-item-1-4" class="modal">
+            <div class="modal-content">                 
+                <div class="product-header">
+                    <p style="margin-left: 90%; color:silver">点击框外即可退出</p>
+                    <h3 style="text-align: center;"><strong>军工加固设备（75Ah-军用锂电池箱)</strong></h3>
+                </div>
+                <hr>
+                <div class="container">
+                    <div id="introduction">
+                        <h3><strong style="color:rgb(0, 119, 109);">75Ah-军用锂电池箱</strong></h3>
+                        <div id="title" style="width: 100%; text-align: left;">
+                            <h3 style="width:20%;background-color: rgb(0, 119, 109);"><strong style="color: white;">产品特点：</strong></h3>
+                        </div>
+                        <div id="introduction-text" style="margin-left:7vw;text-align: left">
+                            <p> 标称电压25.6V。</p>
+                            <p> 标称容量75Ah。</p>
+                            <p> 电池组整体过压、欠压保护，电池单节过压、欠压保护。</p>
+                            <p> 短路保护。</p>
+                            <p> 充放电过流保护。充放电温度保护(高温、低温)。充电限流功能。可显示电池组电量。</p>
+                            <p> 安全、低温放电性能好。</p>
+                            <p> 防震防水：通过壳体内部填充防震结构，可承受高冲击力，达到高安全，高可靠的要求；</p>
+                            <p> 快速可靠连接，采用推拉自锁航空连接器，快捷，安全，可靠。</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="product-item" id="battery-box">
+                        <div id="product-sample" >
+                          <img style="width:30%" src="css/image/product/军工加固设备/无标题2.png">
+                        </div>
+                        <table class="table">
+                          <caption style="text-align: center;">75Ah-军用锂电池箱</caption>
+                          <thead>
+                            <tr>
+                              <th>项目</th>
+                              <th>技术指标</th>
+                              <th>备注</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>额定容量</td>
+                              <td>75Ah</td>
+                            </tr>
+                            <tr>
+                              <td>标称电压</td>
+                              <td>DC25.6V</td>
+                            </tr>
+                            <tr>
+                              <td>充电方式</td>
+                              <td>恒流/恒压</td>
+                              <td>采用专用锂电池充电器</td>
+                            </tr>
+                            <tr>
+                              <td>充电限制电压</td>
+                              <td>DC29.2V</td>
+                            </tr>
+                            <tr>
+                              <td>放电终止电压</td>
+                              <td>DC20V</td>
+                            </tr>
+                            <tr>
+                              <td>最大持续充电电流</td>
+                              <td>40A</td>
+                            </tr>
+                            <tr>
+                              <td>标准充电电流</td>
+                              <td>10A</td>
+                            </tr>
+                            <tr>
+                              <td>最大持续放电电流</td>
+                              <td>60A</td>
+                            </tr>
+                            <tr>
+                              <td>输出24V接口</td>    
+                              <td>额定电压：DC24V ，额定电流：10A</td>      
+                            </tr>
+                            <tr>
+                              <td>输出24V接口</td>
+                              <td>额定电压：DC24V ，额定电流：10A</td>     
+                            </tr>
+                            <tr>
+                              <td>输出12v接口</td>
+                              <td>额定电压：DC12V ，额定电流：10A</td>     
+                            </tr>
+                            <tr>
+                              <td>循环寿命</td>
+                              <td>大于等于1000次</td>
+                            </tr>
+                            <tr>
+                              <td>充电工作温度</td>
+                              <td>0℃~+45℃</td>
+                            </tr>
+                            <tr>
+                              <td>放电工作温度</td>
+                              <td>-20℃~+60℃</td>
+                            </tr>
+                            <tr>
+                              <td>贮存温度</td>
+                              <td>-40℃~+70℃</td>
+                            </tr>
+                            <tr>
+                              <td>尺寸</td>
+                              <td>≤465*350*265mm</td>
+                            </tr>
+                            <tr>
+                              <td>重量</td>
+                              <td>≤26kg</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div id="news-item-1-5" class="modal">
+            <!--模态框内容-->
+            <div class="modal-content">                 
+                <div class="product-header">
+                    <p style="margin-left: 90%; color:silver">点击框外即可退出</p>
+                    <h2 style="text-align: center;"><strong>加固笔记本</strong></h2>
+                </div>
+                <hr>
+                <div class="container">
+                    <div class="product-item">
+                        <div class="product-sample">
+                            <img style="width: 30%;" src="css/image/product/军工加固设备/加固笔记本.png">
+                        </div>
+                    </div>
+                    <hr>
+                    <table class="table">
+                        <h3 style="text-align: left;"><strong>主要技术参数</strong></h3>
+                        <thead>
+                            <tr>
+                                <th>项目名称</th>
+                                <th>硬件参数</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>屏幕</td>
+                                <td>15.6英寸FHD屏 最大分辨率1920*1080</td>
+                            </tr>
+                            <tr>
+                                <td>触摸屏</td>
+                                <td>NA</td>
+                            </tr>
+                            <tr>
+                                <td>摄像头</td>
+                                <td>前置2.0MP/td>
+                            </tr>
+                            <tr>
+                                <td>处理器</td>
+                                <td>
+                                    <p>标配i7-8550U处理器</p>
+                                    <p>可选配I3系列＆I5系列＆I7系列＆I9系列处理器</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>内存</td>
+                                <td>标配16GB DDR4 </td>
+                            </tr>
+                            <tr>
+                                <td>硬盘</td>
+                                <td>标配256GB，支持扩展</td>
+                            </tr>
+                            <tr>
+                                <td>接口</td>
+                                <td>
+                                    <p>HDMI*1,POGO 5pin*1,</p>
+                                    <p>USB 2.0 *1, USB 3.0 *3,</p>
+                                    <p>SIM Card*1,SD Card*1,</p>
+                                    <p>DB9 RS232/485*1, RJ45接口*2,</p>
+                                    <p>标准耳机接口*1,</p>
+                                    <p>DC 19V 3.42A电源接口*1,</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>数据通讯</td>
+                                <td>
+                                    <p>WIFI:2.4G+5G双频，IEEE 802.11(a/b/g/n/ac)</p>
+                                    <p>Bluetooth：BT4.2 (BLE) class1 传输距离：10m</p>
+                                    <p>3G/4G：LTE FDD: B1/B3/B5/B7/B8/B20/B28A</p>
+                                    <p>LTE TDD: B38/B40/B41</p>
+                                    <p>WCDMA: B1/B2/B5/B8</p>
+                                    <p>GSM: 850/900/1800/1900MHz</p>
+                                    <p>GPS导航：U-blox NEO-7，支持：GLONASS、QZSS、GPS</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>电源适配器</td>
+                                <td>AC100V~240V、输出DC 19V/3.42A/64W</td>
+                            </tr>
+                            <tr>
+                                <td>内置电池容量</td>
+                                <td>7.4/2000mAh</td>
+                            </tr>
+                            <tr>
+                                <td>续航时间</td>
+                                <td>约0.5小时</td>
+                            </tr>
+                            <tr>
+                                <td>可插拔电池容量</td>
+                                <td>7.4V/6300mAh</td>
+                            </tr>
+                            <tr>
+                                <td>续航时间</td>
+                                <td>约6小时</td>
+                            </tr>
+                            <tr>
+                                <td>支持操作系统</td>
+                                <td>Win10</td>
+                            </tr>
+                            <tr>
+                                <td>工作温度</td>
+                                <td>-10℃—50℃</td>
+                            </tr>
+                            <tr>
+                                <td>贮存温度</td>
+                                <td>-30℃—70℃</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <img style="margin-left: 13vw; width: 70%;" src="css/image/product/军工加固设备/加固笔记本-2.png">
+                </div>
+            </div>
+        </div>
+        <div id="news-item-1-6" class="modal">
+            <!--模态框内容-->
+            <div class="modal-content">                 
+                <div class="product-header">
+                    <p style="margin-left: 90%; color:silver">点击框外即可退出</p>
+                    <h2 style="text-align: center;"><strong>数据处理终端</strong></h2>
+                </div>
+                <hr>
+                <div class="container">
+                    <div class="product-item">  
+                        <img style="width: 30%;" src="css/image/product/军工加固设备/数据处理终端.png">
+                        <div class="text" style="text-align: left;">
+                            <p>数据处理终端专业为客户定制的具备高计算能力的、高可靠性的数据处理终端，具备不低于Intel I7 6代处理器计算能力，支持Windows7操作系统。</p>
+                            <p>数据处理终端屏幕显示具备户外强光下可视功能，采用交流220V和锂电池两种供电方式，具备接入专用POE无线数据传输功能。数据处理设备采用高抗冲箱体结构，内部采用铝合金结构设计，箱体与外盖之间采用气撑杆连接，整机结构稳定可靠，抗震性能强。箱体外观采用迷彩图案，箱体内部采用的双散热风扇的设计。数据处理设备自带滚轮和拉杆，便于搬运和移动。</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <table class="table">
+                        <h3 style="text-align: left;"><strong>主要技术参数</strong></h3>
+                        <thead>
+                            <tr>
+                                <th>项目名称</th>
+                                <th>硬件参数</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CPU</td>
+                                <td>Intel® Core™ i7-6700 Processor(支持定制)</td>
+                            </tr>
+                            <tr>
+                                <td>内存</td>
+                                <td>32GB DDR4 内存</td>
+                            </tr>
+                            <tr>
+                                <td>硬盘</td>
+                                <td>512G固态硬盘<td>
+                            </tr>
+                            <tr>
+                                <td>显示</td>
+                                <td>Intel® HD Graphics 530显卡</td>
+                            </tr>
+                            <tr>
+                                <td>以太网控制器</td>
+                                <td>百兆/千兆自适应</td>
+                            </tr>
+                            <tr>
+                                <td>屏幕尺寸</td>
+                                <td>18.5"（支持定制）</td>
+                            </tr>
+                            <tr>
+                                <td>分辨率</td>
+                                <td>1920×1080</td>
+                            </tr>
+                            <tr>
+                                <td>亮度</td>
+                                <td>1000 cd/m2（Typ.），满足户外阳光下工作需要</td>
+                            </tr>
+                            <tr>
+                                <td>对比度</td>
+                                <td>1000（Typ.）</td>
+                            </tr>
+                            <tr>
+                                <td>系统整机功耗</td>
+                                <td>不大于120W；</td>
+                            </tr>
+                            <tr>
+                                <td>供电类型</td>
+                                <td>交流220V和内置锂电池供电；</td>
+                            </tr>
+                            <tr>
+                                <td>电池标称电压</td>
+                                <td>25.6V；</td>
+                            </tr>
+                            <tr>
+                                <td>电池额定容量</td>
+                                <td>25000mAh；</td>
+                            </tr>
+                            <tr>
+                                <td>电池供电工作时长</td>
+                                <td>不低于4个小时；</td>
+                            </tr>
+                            <tr>
+                                <td>电池充电时间</td>
+                                <td>4～5个小时；</td>
+                            </tr>
+                            <tr>
+                                <td>工作温度</td>
+                                <td>-40℃～+70℃；</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="news-item-2-2" class="modal">
+            <!--模态框内容-->
+            <div class="modal-content">                 
+                <div class="product-header" style="text-align: center;">
+                    <p style="margin-left: 90%; color:silver">点击框外即可退出</p>
+                    <h2 style="text-align: center;"><strong>边缘计算平台</strong></h2>
+                </div>
+                <div class="container">
+                    <div id="product-sample">
+                        <img style="width:60%;" src="css/image/product/高速计算平台/边缘计算平台.png">
+                    </div>
+                    <div id="system-feature">
+                        <div id="title" style="width:100%; text-align: left;">
+                            <h3 style="width:18%; background-color:rgb(23, 91, 123);color: white;"><strong>产品特性</strong></h3>
+                        </div>
+                        <div class="text">
+                            <ul class="part">
+                                <li>符合OpenVPX标准；</li>
+                                <li>可扩展为经典配置，其架构为CPU+GPU+FPGA，提供BSP支持二次开发</li>
+                                <li>支持用于数据分析、机器学习（ML）和人工智能（AI）应用的复杂算法的应用</li>
+                                <li>整机计算能力应大于1TFLOPS；</li>
+                                <li>信息采集接口至少两种且总带宽大于10Gbps；</li>
+                                <li>系统内部各个节点具有高速串行接口，可实现任意节点之间至少10Gbps的点对点传输能力。并且各节点间具有辅助数据传输网络；</li>
+                                <li>具备完善的系统监测与管理功能，可实现计算资源、网络架构的动态重构功能；</li>
+                                <li>整机峰值功耗小于200W；</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="news-item-3-1" class="modal">
+            <!--模态框内容-->
+            <div class="modal-content">                 
+                <div class="product-header">
+                    <p style="margin-left: 90%; color:silver">点击框外即可退出</p>
+                    <h3 style="text-align: center;"><strong>3D 深度相机</strong></h3>
+                </div>
+                <hr>
+                <div class="container">
+                    <div id="introduction">
+                        <h3><strong style="color:rgb(0, 91, 119);">TOF (Time-of-Flight) 3D 深度相机</strong></h3>
+                        <div id="title" style="width: 100%; text-align: left;">
+                            <h3 style="width:41%;background-color: rgb(0, 91, 119);"><strong style="color: white;">用飞行时间法3D成像的TOF相机</strong></h3>
+                        </div>
+                        <div id="product-sample">
+                            <img style="width: 20%;" src="css/image/product/3D深度相机/camera-1.png">
+                          </div>
+                        <div id="introduction-text" style="margin-left:5%;text-align: left">
+                            <p> 北京亿旗创新科技发展有限公司最新发布配有标准机器视觉接口的TOF相机EF-DCM-TL。EF-DCM-TL能快速、便捷地使用飞行时间方法对拍摄场景进行3D成像，拍摄高分辨率图像中每个彩色/灰度像素都具有深度信息（及距离信息）。相机配备光谱 850nm或945nm的激光光源，通过一次拍摄可生成2D和3D数据，凭借其集成的 LASER 光源，使相机不依赖于环境光，甚至在黑暗环境中亦可使用。</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="product-item">
+                        <div id="photo-show" style="margin-left:5%; width: 100%; display: flex; text-align: center;">
+                            <div>
+                                <h3 style="margin-left:0vw; width:100%; background-color: red; color: white;">深度伪彩图</h3>
+                                <img style="width: 15vw;" src="css/image/product/3D深度相机/camera-2.png">
+                            </div>
+                            <div style="margin-left: 3vw;">
+                                <h3 style="margin-left:0vw; width:100%; background-color: green; color: white;">强度图像</h3>
+                                <img style="width: 15vw;" src="css/image/product/3D深度相机/camera-3.png">
+                            </div>
+                            <div>
+                                <h3 style="margin-left:0vw; width:100%; background-color: blue; color: white;">3D点云图像</h3>
+                                <img style="width: 19vw;" src="css/image/product/3D深度相机/camera-4.png">
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="preference" style="text-align: left;">
+                            <h3><strong>相机功能特征如下：</strong></h3>
+                            <ul style="margin-left:5%;">
+                                <li><strong>相机内部搭载一颗高性能算法处理器，专用于滤波处理、点云计算、识别和跟踪算法的处理。可针对不同场景配置专用处理算法，可完成高级检测、测量和通信，帮助您以极少的成本轻松完成项目要求。</strong></li>
+                                <li><strong>配备图形化用户界面，便于客户使用，帮助您节约软件学习成本，缩短您的应用开发时间。</strong></li>
+                                <li><strong>行业标准接口，方便您连接PLC、机器人和控制系统。</strong></li>
+                                <li><strong>测量速度快，分辨率高，图像分辨率高可达1280*1024，帧率达60帧/秒，测量精度为0.5%。可帮助您提高生产量，确保产品质量。</strong></li>
+                                <li><strong>相机可直接输出范围图、强度图、置信度图、可为您获得精确的3D尺寸和位置测量结果。</strong></li>
+                                <li><strong>激光功率和曝光时间可调，深度测量距离可达几十米甚至上百米。抗干扰能力强，可用于恶劣工业环境</strong></li>
+                            </ul>
+                        </div>
+                        <div id="theory" style="text-align: left;">
+                            <h3><strong>TOF相机的功能原理：</strong></h3>
+                            <div id="text" style="text-align: center;">
+                                <img style="width:30vw;" src="css/image/product/3D深度相机/camera-5.png">
+                                <p>光的行进速度是每秒300,000,000 m。通过测量一束光在两个点之间行进所花费的时间，我们可以计算它们之间的距离。这一原理就是TOF(Time-of-Flight)相机所使用的核心测量技术。</p>
+                            </div>
+                        </div>
+                        <div id="case-area" style="text-align: left;">
+                            <h3><strong>行业应用案例：</strong></h3>
+                            <div id="cases" style="margin-left: 5%; display: flex;">
+                                <div class="case" id="case-1">
+                                    <img src="css/image/product/3D深度相机/camera-6.png">
+                                    <h4><strong>形状检测</strong></h4>
+                                    <p>客户需同时检测刹车盘上的多个特征：</p>
+                                    <ul style="margin-left:3%;">
+                                        <li>表面质量</li>
+                                        <li>螺栓的高度位置</li>
+                                        <li>金属弹簧的角度</li>
+                                    </ul>
+                                    <p>一台2D相机很难检测上述所有特征，但是3D却能同时完成所有检测。</p>
+                                    <img style="margin-top: 5%;" src="css/image/product/3D深度相机/camera-9.png">
+                                </div>
+                                <div class="case" id="case-2">
+                                    <img src="css/image/product/3D深度相机/camera-7.png">
+                                    <h4><strong>不受对比度限制的3D检测</strong></h4>
+                                    <p>检查盒内曲奇饼干时，客户需使用能够在阴暗环境下检测阴暗物体的解决方案。在该示例中，需进行下列内容：</p>
+                                    <ul style="margin-left:3%;">
+                                        <li>3D形状是否正确</li>
+                                        <li>每个曲奇饼干是否位于正确位置</li>
+                                        <li>通过可靠的高度测量检查确实是否装满曲奇饼干</li>
+                                    </ul>
+                                    <img style="margin-top: 8%;" src="css/image/product/3D深度相机/camera-10.png">
+                                </div>
+                                <div class="case" id="case-3">
+                                    <img style="margin-top: 2%;" src="css/image/product/3D深度相机/camera-8.png">
+                                    <h4><strong>物料生产质量在线检测</strong></h4>
+                                    <p>为了优化生产线，减少浪费和泄露，客户必须精确测量和控制物体尺寸和体积。</p>
+                                    <p>3D相机可进行连续物料流的在线监测,可提供经过标定的三维测量数据。只使用一台独立运行的设备即可快速精准地检查物料位置和产品质量。</p>
+                                    <img style="margin-top: 15%;" src="css/image/product/3D深度相机/camera-11.png">
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table">
+                            <h3 style="text-align: left;"><strong>详细参数信息：</strong></h3>
+                            <thead>
+                                <tr>
+                                    <th>相机</th>
+                                    <th>EF-DCM-TL</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>分辨率</td>
+                                    <td>640 × 480/1280*1024</td>
+                                </tr>
+                                <tr>
+                                    <td>类型</td>
+                                    <td>LASER  850nm/945nm</td>
+                                </tr>
+                                <tr>
+                                    <td>帧数率</td>
+                                    <td>30~60</td>
+                                </tr>
+                                <tr>
+                                    <td>探测距离</td>
+                                    <td>0.5~10m</td>
+                                </tr>
+                                <tr>
+                                    <td>精度</td>
+                                    <td>0.5%</td>
+                                </tr>
+                                <tr>
+                                    <td>接口</td>
+                                    <td>符合千兆网(GigE)、USB3.0</td>
+                                </tr>
+                                <tr>
+                                    <td>镜头</td>
+                                    <td>60 °h x 45 °v（可配）</td>
+                                </tr>
+                                <tr>
+                                    <td>软件</td>
+                                    <td>兼容Windows7及以上系统</td>
+                                </tr>
+                                <tr>
+                                    <td>曝光控制</td>
+                                    <td>自动曝光控制，且可根据场景预先进行设置</td>
+                                </tr>
+                                <tr>
+                                    <td>操作温度</td>
+                                    <td>-20~50°C</td>
+                                </tr>
+                                <tr>
+                                    <td>重量</td>
+                                    <td>120g</td>
+                                </tr>
+                                <tr>
+                                    <td>尺寸</td>
+                                    <td>47*47*52.48（含镜头高13.3mm）</td>
+                                </tr>
+                                <tr>
+                                    <td>电源</td>
+                                    <td>5VDC，15W</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="news-item-4-2" class="modal">
+            <!--模态框内容-->
+            <div class="modal-content">                 
+                <div class="product-header" style="text-align: center;">
+                    <p style="margin-left: 90%; color:silver">点击框外即可退出</p>
+                    <h2 style="text-align: center;"><strong>TMS320C6678高速处理信号板</strong></h2>
+                    <img style="width:30%;" src="css/image/product/高速处理器/高速处理信号板.png">
+                </div>
+                <div class="container">
+                    <div class="text">
+                        <p>TMS320C6678信号处理板是一款6U OpenVPX板卡，符合VITA 65系统规范，板卡实拍图片如上图所示。板卡集成八片TI高性能8核信号处理器TMS320C6678，能够提供2048GMACs 或1024GFLOPs 的峰值处理能力，集成 sRIO交换器和千兆网交换器，板间提供四路 x4sRIO，支持 8GB/s 的全双工板间数据带宽，板卡适用于雷达、声纳、图像等信号处理系统。板卡提供风冷和导冷两种规格，采用 VPX12V 供电。</p>
+                    </div>
+                    <hr>
+                    <div id="module">
+                        <div id="title" style="width:100%; text-align: left;">
+                            <h3 style="width:18%; background-color:rgb(30, 128, 0);color: white;"><strong>处理模块</strong></h3>
+                        </div>
+                        <div clss="text">
+                            <p>MS320C6678 处理器</p>
+                            <p>TI公司的TMS320C6678处理器基于Keystone结构，片内包括8个C66x 内核，具有浮点和定点双运算模块，TMS320C6678处理器片内每个内核具有32KB的L1D 缓存、32KB的L2D缓存和512KB的L2缓存，此外还有4096KB 的核间共享存储器。</p>
+                            <p>TMS320C6678 处理器工作在 1 GHz 主频时能够提供 256GMACs 或 128GFLOPs 的处理能力，八片TMS320C6678 能够提供 2048 GMACs 或 1024 GFLOPs 的峰值处理能力。每片 TMS320C6678 及其外围电路形成一个处理模块。</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="DDR3">
+                        <div id="title" style="width:100%; text-align: left;">
+                            <h3 style="width:24%; background-color:rgb(30, 128, 0);color: white;"><strong>DDR3存储器</strong></h3>
+                        </div>
+                        <div class="text">
+                            <p>每片 TMS320C6678 处理器配置容量 2GB 的 DDR3-1333 存储器，位宽64bit，峰值数据吞吐率可达 10GB/s，整板提供 16GB 的 DDR3 存储空间。</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="storage">
+                        <div id="title" style="width:100%; text-align: left;">
+                            <h3 style="width:28%; background-color:rgb(30, 128, 0);color: white;"><strong>非易失性存储器</strong></h3>
+                        </div>
+                        <div class="text">
+                            <p>处理板包括丰富的 FLASH 存储资源，包括 NAND FLASH、SPI NOR FLASH 和 I2C EEPROM 几种类型。板上 DSP0 配置一片 2GB 的 SLC NAND FLASH 芯片，用以存储系统文件和大批量数据，DSP0 通过 EMIF接口访问 NAND FLASH。</p>
+                            <p>DSP0 配置一片 16MB的SPI NOR FLASH，用以存储存储板卡硬件信息、系统配置参数等。另外配置一片 16MB 的 SPI NOR FLASH，用以存储八片处理器的共享数据。</p>
+                            <p>每片 DSP 均配置一片 128KB 的 I2C EEPROM 存储器，用以存储 BootLoader 程序、POST 程序和启动参数信息。</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id=“exchange>
+                        <div id="title" style="width:100%; text-align: left;">
+                            <h3 style="width:27%; background-color:rgb(30, 128, 0);color: white;"><strong>sRIO 交换架构</strong></h3>
+                        </div>
+                        <img style="margin-left:25vw; width:30%;" src="css/image/product/高速处理器/高速处理信号版-2.png">
+                        <div class="text">
+                            <p>信号处理板使用一片 IDT CPS-1848 Gen2 sRIO交换器，八个 DSP 各自通过 x4 sRIO 连接到 sRIOswitch，从 sRIO switch 引出四路 x4 sRIO 到 VPXP1 连接器。sRIO 工作在 5Gbps 速率上时，能够实现处理器间 2GB/s 的传输带宽，和板间 8GB/s的传输带宽，sRIO 交换架构见下图。信号处理板可以应用于基于全互联或星形互连的处理系统。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="news-item-4-3" class="modal">
+            <!--模态框内容-->
+            <div class="modal-content">                 
+                <div class="product-header" style="text-align: center;">
+                    <p style="margin-left: 90%; color:silver">点击框外即可退出</p>
+                    <h2 style="text-align: center;"><strong>TEF6678 图像处理系统板</strong></h2>
+                    <div id="photo-group">
+                        <img style="width:30%;" src="css/image/product/高速处理器/图像处理系统.png">
+                        <img style="width:30%;" src="css/image/product/高速处理器/图像处理系统-2.png">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="text">
+                        <p>面向嵌入式微型化工业视觉领域，主 CPU采用 8 核 DSP 处理器 TMS320C6678，具有 10G处理能力，支持 Basler/Dalsa 等国际主流CameraLink、 Gige 相机的全速接入，提供DSP CCS 环境下的相机驱动软件包和图像处理算法包，并提供基于 OpenMP 的简易化 CCS 二次开发框架和典型例程，同时提供上位机 C#调试软件程序。客户只需要有 C 语言基础即可根据项目需求进行智能图像算法开发和系统应用软件开发。可用于缺陷检测、尺寸测量、色选、运动目标检测跟踪、字符识别等智能图像处理分析等。</p>
+                    </div>
+                    <hr>
+                    <div id="module">
+                        <div id="title" style="width: 100%; text-align: left;">
+                            <h3 style="width:18%; background-color:rgb(30, 128, 0);color: white;"><strong>产品特点</strong></h3>
+                        </div>
+                        <ul class="text" style="list-style: square;">
+                            <li>DSP 具有 8 个 TMS320C66x 核，可达 10G 处理能力；每核具有 32KB L1P，32KB L1D，512KB L2；具有 4MB Shared L2。</li>
+                            <li>移植完备的LWIP网络协议栈，每路网口具有≥60MB/s的带宽，采用EDMA图像收发方式有效节省了CPU资源。是目前带宽最高、性能最优的网络底层驱动程序解决方案。</li>
+                            <li>支持 Balser：Ace 系列、Scout 系列和 Pilot 系列 Gige 面阵相机；支持 DALSA：Spyder3系列、Genie 系列 CameraLink、Gige 线阵面阵相机。</li>
+                            <li>简洁的 CCS 二次开发环境，采用 OpenMP 进行任务调度和并行程序设计，与采用 VC++开发基本类似，方便用户快速上手。</li>
+                            <li>提供多个典型算法的例程（边缘提取、字符识别、尺寸计算等），客户可借鉴使用。</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div id="connector">
+                        <div id="title" style="width: 100%; text-align: left;">
+                            <h3 style="width:18%; background-color:rgb(30, 128, 0);color: white;"><strong>外设接口</strong></h3>
+                        </div>
+                        <ul class="text" style="list-style: square;">
+                           <li>1024 MB DDR3-1333 存储器。</li>
+                            <li>64MB EMIF NAND Flash 存储器。</li>
+                            <li>16MB SPI NOR Flash 存储器。</li>
+                            <li>128KB I2C EEPROM for booting。  2 个千兆网络接口，每路带宽≥60MB/s。  一路 RS485 接口，可配置成 RS232 接口。</li>
+                            <li>4 位用户拨码开关。</li>
+                            <li>6 个 LED 指示灯。</li>
+                            <li>3 个复位按键。</li>
+                            <li>3 输入、3 输出带光耦隔离的 IO 口。</li>
+                            <li>HyperLink - 50Gbaud Operation，全双工。</li>
+                            <li>调试接口：60pin EMU 和 14pin JTAG，支持XDS560v2、XDS560、XDS510 等仿真器。</li>
+                            <li>FMC 扩展接口： 4 线 SRIO 2.1-5 Gbaud PerLane 全双工。</li>
+                            <li>2 线 PCIe Gen2-5 Gbaud Per Lane 全双工。</li>
+                            <li>22 对差分对扩展线。</li>
+                            <li>1 路 SPI 接口、2 对差分时钟线。</li>
+                            <li>可扩展4路千兆网相机接口和4路Camera-Link相机接口。</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div id="physical-feature">
+                        <div id="title" style="width: 100%; text-align: left;">
+                            <h3 style="width:18%; background-color:rgb(30, 128, 0);color: white;"><strong>物理特性</strong></h3>
+                        </div>
+                        <div id="product-sample">
+                            <img src="css/image/product/高速处理器/图像处理系统-3.png" >
+                        </div>
+                        <ul class="text" style="list-style: square;">
+                            <li>板卡大小为 170mm×80mm。</li>
+                            <li>板卡功率 20W。 </li>
+                            <li>供电：DC5~12V/4A，纹波：≤12%。 </li>
+                            <li>储存温度：-20℃～+70℃。</li>
+                            <li>工作温度：商业级 0℃～+70℃，工业级-40℃～+85℃。</li>
+                            <li>工作湿度：10%～80%。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="news-item-4-4" class="modal">
+            <!--模态框内容-->
+            <div class="modal-content">                 
+                <div class="product-header" style="text-align: center;">
+                    <p style="margin-left: 90%; color:silver">点击框外即可退出</p>
+                    <h2 style="text-align: center;"><strong>EF-K7+EF6678 板卡</strong></h2>
+                    <div id="product-sample">
+                        <img style="width:30%;" src="css/image/product/高速处理器/EF-K7+EF6678板卡.png">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="text">
+                        <p>面向嵌入式微型化视觉图像领域，DSP 采用 TI 公司最新一代 Keystone 多核 C66x 系列 TMS320C6678，具有 10G 处理能力；FPGA 采用 Xilinx 公司的 Kintex-7（K7）系列 XC7K325T-2FFG900I，具有 326,080逻辑单元。系统由两块核心板块——FPGA 板块和 DSP 板块组成，FPGA 扩展有 2 路 Full Camera Link 接口（可通过跳线设置，将其配置为 4 路 Base Camera Link 接口），其中一路为输入，一路为输出；DSP板为我们已经大规模成熟应用 FMC6678 板块。两块板卡通过 FMC 接口连接，相机的图像数据先从 CameraLink 接口传输至 FPGA 板，FPGA 对其进行预处理，然后通过 FMC 接口上的 RapidIO 传输至 DSP 板块。</p>
+                        <p>支持 Basler、Teledyne Dalsa、PointGrey、e2v、Vieworks、JAI 等国际主流 CameraLink 相机的全速接入，提供 FPGA 端的 Camera Link 相机驱动软件，以及 DSP CCS 图像处理算法包，并提供基于 OpenMP的简易化 CCS 二次开发框架和典型例程，同时提供上位机 C#调试软件程序。客户只需要有 C 语言基础即可根据项目需求进行智能图像算法开发和系统应用软件开发。可用于缺陷检测、尺寸测量、色选、运动目标检测跟踪、字符识别等智能图像处理分析等。</p>
+                    </div>
+                    <hr>
+                    <div id="connector">
+                        <div id="title" style="width: 100%; text-align: left;">
+                            <h3 style="width:36%; background-color:rgb(30, 128, 0);color: white;"><strong>DSP 板卡外设接口</strong></h3>
+                        </div>
+                        <ul class="text" style="list-style: square;">
+                            <li>1024MB DDR3-1333 存储器。</li>
+                            <li>64MB EMIF NAND Flash 存储器。</li>
+                            <li>16MB SPI NOR Flash 存储器。</li>
+                            <li>128KB I2C EEPROM for booting。 </li>
+                            <li>2 个千兆网络接口，每路带宽≥60MB/s。 </li>
+                            <li>一路 RS485 接口，可配置成 RS232 接口。</li>
+                            <li> 4 位用户拨码开关。</li>
+                            <li> 6 个 LED 指示灯。</li>
+                            <li> 3 个复位按键。</li>
+                            <li> 3 输入、3 输出带光耦隔离的 IO 口。</li>
+                            <li> HyperLink - 50Gbaud Operation，全双工。</li>
+                            <li> 调试接口：60pin EMU 和 14pin JTAG，支持XDS560v2、XDS560、XDS510 等仿真器。</li>
+                            <li> FMC 扩展接口： 4 线 SRIO 2.1-5 Gbaud Per Lane 全双工。</li>
+                            <li> 2 线 PCIe Gen2-5 Gbaud Per Lane 全双工。</li>
+                            <li> 22 对差分对扩展线。</li>
+                            <li> 1 路 SPI 接口、2 对差分时钟线。</li>
+                            <li> 可 扩 展 4 路 千 兆 网 相 机 接 口 和 4 路Camera-Link 相机接口。</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div id="physical-feature">
+                        <div id="title" style="width: 100%; text-align: left;">
+                            <h3 style="width:37%; background-color:rgb(30, 128, 0);color: white;"><strong>FPGA 板卡外设接口</strong></h3>
+                        </div>
+                        <ul class="text" style="list-style: square;">
+                            <li>256MB DDR3-1333 存储器。</li>
+                            <li>128MB NAND Flash 存储器。</li>
+                            <li>ESATA 接口。</li>
+                            <li>3 路 RS422。</li>
+                            <li>>CameraLink 接口：两路 BASE 模式输入或一路 FULL 模式输入。</li>
+                            <li>CameraLink 接口：两路 BASE 模式输出或一路 FULL 模式输出。</li>
+                            <li>1 个复位按键。</li>
+                            <li>1 个 Flash 配置指示灯。</li>
+                            <li>调 试 接 口 ： 6pin JTAG, 支 持 Xilinx 的SEED-CABLE USB II 仿真器。</li>
+                            <li>FMC 扩展接口： 4 线 SRIO 2.1-5 Gbaud Per Lane 全双工。</li>
+                            <li>2 线 PCIe Gen2-5 Gbaud Per Lane 全双工。</li>
+                            <li>2 路 GPIO。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="news-item-4-5" class="modal">
+            <!--模态框内容-->
+            <div class="modal-content">                 
+                <div class="product-header" style="text-align: center;">
+                    <p style="margin-left: 90%; color:silver">点击框外即可退出</p>
+                    <h2 style="text-align: center;"><strong>EF-K7-TMS320C667 板卡</strong></h2>
+                    <div id="photo-group">
+                        <img style="width:30%;" src="css/image/product/高速处理器/EF-K7-TMS320C667 板卡.png">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="text">
+                        <p>面向高速视觉图像处理领域，DSP 采用 TI 公司 最 新 一 代 Keystone 多 核 C66x 系 列TMS320C6678，具有 10G 处理能力； FPGA 采用Xilinx 公 司 的 Kintex-7 （ K7 ） 系 列XC7K160TFBG676PKG，具有 162,240 逻辑单元。DSP和 FPGA 通过 4x RapidIO 连接，可实现 3.125G 的传输速率。板卡对外接口包括：2 路 LVDS 高速相机接口，6 路 RS422 接口。提供 FPGA 端的 LVDS相机驱动软件，以及 DSP CCS 图像处理算法包，并提供基于 OpenMP 的简易化 CCS 二次开发框架和典型例程，同时提供上位机 C#调试软件程序。客户只需要有 C 语言基础即可根据项目需求进行智能图像算法开发和系统应用软件开发。可用于缺陷检测、尺寸测量、色选、运动目标检测跟踪、字符识别等智能图像处理分析等。</p>
+                    </div>
+                    <hr>
+                    <div id="connector">
+                        <h3 style="width:18%; background-color:rgb(30, 128, 0);color: white;"><strong>产品特点</strong></h3>
+                        <ul class="text" style="list-style: square;">
+                            <li>1024MB DDR3-1333 存储器。</li>
+                            <li>64MB EMIF NAND Flash 存储器。</li>
+                            <li>16MB SPI NOR FLASH 存储器。</li>
+                            <li>128KB I2C EEPROM for booting。</li>
+                            <li>2 个千兆网络接口，每路带宽≥60MB/s。</li>
+                            <li>一路 RS485 接口，可配置成 RS232 接口。</li>
+                            <li>4 位用户拨码开关。</li>
+                            <li>6 个 LED 指示灯。</li>
+                            <li>3 个复位按键。</li>
+                            <li>3 输入、3 输出带光耦隔离的 IO 口。</li>
+                            <li>调试接口：60pin EMU 和 14pin JTAG，支持XDS560v2、XDS560、XDS510 等仿真器。</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div id="FPGA">
+                        <h3 style="width:37%; background-color:rgb(30, 128, 0);color: white;"><strong>FPGA 板卡外设接口</strong></h3>
+                        <ul class="text" style="list-style: square;">
+                            <li>256MB DDR3-1333 存储器。</li>
+                            <li>128MB NAND Flash 存储器。</li>
+                            <li>ESATA 接口。</li>
+                            <li>3 路 RS422。 </li>
+                            <li>1 个复位按键。</li>
+                            <li>1 个 Flash 配置指示灯。</li>
+                            <li>调 试 接 口 ： 6pin JTAG, 支 持 Xilinx 的SEED-CABLE USB II 仿真器。</li>
+                        </ul>
+                    </div>
+                    <div id="physical-feature">
+                        <h3 style="width:18%; background-color:rgb(3, 163, 150);color: white;"><strong>物理特性</strong></h3>
+                        <ul class="text" style="list-style: square;">
+                            <li>256MB DDR3-1333 存储器。</li>
+                            <li>128MB NAND Flash 存储器。</li>
+                            <li>ESATA 接口。</li>
+                            <li>3 路 RS422。</li>
+                            <li>>CameraLink 接口：两路 BASE 模式输入或一路 FULL 模式输入。</li>
+                            <li>CameraLink 接口：两路 BASE 模式输出或一路 FULL 模式输出。</li>
+                            <li>1 个复位按键。</li>
+                            <li>1 个 Flash 配置指示灯。</li>
+                            <li>调 试 接 口 ： 6pin JTAG, 支 持 Xilinx 的SEED-CABLE USB II 仿真器。</li>
+                            <li>FMC 扩展接口： 4 线 SRIO 2.1-5 Gbaud Per Lane 全双工。</li>
+                            <li>2 线 PCIe Gen2-5 Gbaud Per Lane 全双工。</li>
+                            <li>2 路 GPIO。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="news-item-4-6" class="modal">
+            <!--模态框内容-->
+            <div class="modal-content">                 
+                <div class="product-header" style="text-align: center;">
+                    <p style="margin-left: 90%; color:silver">点击框外即可退出</p>
+                    <h2 style="text-align: center;"><strong>EF-K7-TMS320C667 板卡</strong></h2>
+                    <div id="photo-group">
+                        <img style="width:30%;" src="css/image/product/高速处理器/数据记录系统.png">
+                        <img style="width:30%;" src="css/image/product/高速处理器/数据记录系统-2.png">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="text">
+                        <p>数据记录系统是专为在恶劣环境中记录物体各类参数而设计的。数据记录系统具有智能化、高精度、大容量等特点，可以在高速飞行、高频振动、高冲击、爆炸、重返大气层、深水、湿热、干燥、强噪声、强辐射等环境中可靠的完成多种数据（冲击、振动、噪声、过载、压力、应变、温度、湿度、姿态、气体浓度、气体成份、生命特征、音频、视频、控制时序、GPS、BD等）的采集工作，支持 RS232、RS422、RS485、LVDS、1553B、PCM 等接口形式的数字信号编码记录。适用于航天、航空、兵器、核工业、船舶、冶金、石油、汽车等领域。</p>
+                    </div>
+                    <div id="structure">
+                        <h3 style="width:18%; background-color:rgb(30, 128, 0);color: white;"><strong>模块架构</strong></h3>
+                        <div class="text">
+                            <h4><strong>1、采编（SCP）部分：</strong></h4>
+                            <ul class="part">
+                                <li>调理采集单元-ASU（Adjust Sample Unit）；</li>
+                                <li>编码发射单元-CEU（Code Emisit Unit）；</li>
+                                <li>电源管理单元-PMU（Power Management Unit）</li>
+                            </ul>
+                            <h4><strong>2、存储（DSP）部分</strong></h4>
+                            <ul class="part">
+                                <li>接收解码单元-RDU （Receive Decode Unit）；</li>
+                                <li>数据存储单元-DSU （Data Save Unit）；</li>
+                                <li>弹地通讯单元-ITU 构成（Interface Telemetry Unit）</li>
+                            </ul>
+                            <h4><strong>3、地面控制（DCP）部分</strong></h4>
+                            <ul class="part">
+                                <li>地面供电单元；</li>
+                                <li>地面控制软件单元；</li>
+                                <li>地面通讯单元</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="index">
+                        <h3 style="width:18%; background-color:rgb(30, 128, 0);color: white;"><strong>模块架构</strong></h3>
+                        <div class="text">
+                            <h4><strong>1、模拟信号</strong></h4>
+                            <ul class="part">
+                                <li>电压：0 V～5V</li>
+                                <li>电荷：±50000pC</li>
+                                <li>热电阻：-200℃～100℃</li>
+                                <li>热电偶：T 型、K 型</li>
+                                <li>输入阻抗：≥2MΩ</li>
+                            </ul>
+                            <h4><strong>2、数字信号</strong></h4>
+                            <ul class="part">
+                                <li>RS232、RS422、RS485：300bps～921.6Kbps</li>
+                                <li>LVDS：300Mbps；1553B：≤1Mbps</li>
+                            </ul>
+                            <h4><strong>3、码率：</strong></h4>
+                            <ul class="part">
+                                <li>接口： RS232、RS422、RS485、LVDS、1553B</li>
+                            </ul>
+                            <h4><strong>4、开关信号</strong></h4>
+                            <ul class="part">
+                                <li>输入电压峰值：可通过信号调理对输入信号电平进行变换；</li>
+                                <li>采样率：≤10MSPS</li>
+                            </ul>
+                            <h4><strong>5、EMC</strong></h4>
+                            <ul class="part">
+                                <li>设备所产生的电磁干扰发射及敏感度满足 GJB151A-97《军用设备和分系统电磁发射和敏感度要求》</li>
+                            </ul>
+                            <h4><strong>6、环境</strong></h4>
+                            <ul class="part">
+                                <li>工作温度：-40℃～+75℃</li>
+                                <li>冲击：25000g</li>
+                                <li>振动：200gRMS 过载：30g；</li>
+                                <li>水压：30m 海水</li>
+                                <li>噪声：172dB</li>
+                            </ul>
+                            <h4><strong>7、可靠性</strong></h4>
+                            <ul class="part">
+                                <li>平均无故障工作时间：MTBF≥2000h</li>
+                                <li>连续工作时间：≥20h</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="news-item-4-7" class="modal">
+            <!--模态框内容-->
+            <div class="modal-content">                 
+                <div class="product-header" style="text-align: center;">
+                    <p style="margin-left: 90%; color:silver">点击框外即可退出</p>
+                    <h2 style="text-align: center;"><strong>EF-K7-TMS320C667 板卡</strong></h2>
+                    <div id="photo-group">
+                        <img style="width:30%;" src="css/image/product/高速处理器/多路视频叠加显示系统.png">
+                        <img style="width:30%;" src="css/image/product/高速处理器/多路视频叠加显示系统-2.png">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="text">
+                        <p>多路视频叠加显示系统是一款应用于工业、军工领域的高清视频显示设备，适合于多路高清视频画中画显示、画面拼接显示等多功能显示应用。系统采用高性能 FPGA 处理器，可实现将输入的多路高清视频信号、模拟视频信号按设定的方式进行图像选择、放缩、叠加、增强处理，最终图像输出至显示设备。</p>
+                    </div>
+                    <div id="system-feature">
+                        <h3 style="width:28%; background-color:rgb(30, 128, 0);color: white;"><strong>系统功能特点</strong></h3>
+                        <div class="text">
+                            <p>1）支持一路高清视频图像信号的输入功能，输入分辨率最高可达 WUXGA（1920×1200），视频信号包含模拟 RGB（VGA 接口）、DVI 信号和HDMI 信号可选，其包含以下特点：</p>
+                            <ul class="part">
+                                <li>视频串色抑制颜色恢复处理</li>
+                                <li>空间/时间降噪图像清洁处理</li>
+                                <li>支持 YUV/YCrCb/YPrPb 到 RGB 和 sRGB 彩色空间转换</li>
+                                <li>支持 DLTI/DCTI 视频质量的改善</li>
+                                <li>支持 ICM 色彩管理</li>
+                            </ul>
+                            <p>2） 支持 CVBS （复合视频信号）的视频图像信号输入功能，其包含以下特点: </p>
+                            <ul class="part">
+                                <li>自 适应 输 入 检测 ， 支 持 NTSC,PAL,andSECAM 等多种标准；</li>
+                                <li>运动图像 3D 梳状滤波（3D Comb Filter）图像处理、3D 视频图像去隔行、3D 降噪处理，动态图像效果更好；</li>
+                                <li>非线性视频图像缩放；</li>
+                                <li>任意帧速率转换；</li>
+                                <li>动态视屏图像画面增强处理；</li>
+                            </ul>
+                            <p>3）支持 CVBS 视频图像与高清视频图像叠加功能，其中 CVBS 图像可缩放、叠加位置可调整。</p>
+                            <p>4）支持视频图像参数（频率、相位、亮度、对比度、色温、锐利度、Gamma 校正）的调整，以及输入高清视频信号自适应调整。</p>
+                            <p>5）支持通过 RS422/RS232/RS485 接口调整OSD 功能参数；</p>
+                            <p>6）支持多种通信接口（I2C、UART、SPI、CAN、USB、以太网）</p>
+                            <p>7）支持叠加后视频信号以 DVI 格式信号和 LVDS双 8 格式信号输出。</p>
+                            <p>8）支持 OSD 菜单功能，可实现视频图像叠加的功能和参数的调整。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="news-item-5-1" class="modal">
+            <!--模态框内容-->
+            <div class="modal-content">                 
+                <div class="product-header">
+                    <p style="margin-left: 90%; color:silver">点击框外即可退出</p>
+                    <h2 style="text-align: center;"><strong>显控板</strong></h2>
+                </div>
+                <hr>
+                <div class="container">
+                    <div id="introduction">
+                        <div class="text">
+                            <img style="width: 50%; margin-left: 15vw;" src="css/image/product/显控板/显控板.png">
+                        </div>
+                    </div>
+                    <table class="table">
+                        <h3 style="text-align: left; background-color: rgb(30, 100, 165);"><strong style="color: white;">产品参数</strong></h3>
+                        <tbody>
+                            <tr>
+                                <td>驱屏接口EDP</td>
+                                <td>4-Lane EDP接口 支持3840*2160@60Hz</td>
+                            </tr>
+                            <tr>
+                                <td>驱屏接口V-BY-ONE</td>
+                                <td>8-Lane V-BY-ONE 支持4096*2160@60Hz</td>
+                            </tr>
+                            <tr>
+                                <td>输入信号接口DP-1</td>
+                                <td>Up To 4960*2160@60Hz 可选</td>
+                            </tr>
+                            <tr>
+                                <td>输入信号接口DP-2</td>
+                                <td>Up To 4960*2160@60Hz 可选</td>
+                            </tr>
+                            <tr>
+                                <td>输入信号接口VGA</td>
+                                <td>Up To 1920*1200@60Hz 可选</td>
+                            </tr>
+                            <tr>
+                                <td>输入信号接口HDMI</td>
+                                <td>2路，HDMIA/HDMIB可择一路支持MHL</td>
+                            </tr>
+                            <tr>
+                                <td>反转功能</td>
+                                <td>0度、180度 可选</td>
+                            </tr>
+                            <tr>
+                                <td>环出</td>
+                                <td>环出HDMIA信号(预留) 可选</td>
+                            </tr>
+                            <tr>
+                                <td>PWM接口</td>
+                                <td>支持PWM方式和电压方式</td>
+                            </tr>
+                            <tr>
+                                <td>恒流源接口</td>
+                                <td>最大支持60V,3A</td>
+                            </tr>
+                            <tr>
+                                <td>自动背光</td>
+                                <td>根据环境光自动调节背光亮度；</td>
+                            </tr>
+                            <tr>
+                                <td>工作电压</td>
+                                <td>12V</td>
+                            </tr>
+                            <tr>
+                                <td>驱屏电压</td>
+                                <td>3.3V或5V或12V</td>
+                            </tr>
+                            <tr>
+                                <td>电源模式</td>
+                                <td>支持低功耗模式，待机模式</td>
+                            </tr>
+                            <tr>
+                                <td>OSD 语言</td>
+                                <td>英语，中文</td>
+                            </tr>
+                            <tr>
+                                <td>操作界面</td>
+                                <td>OSD菜单</td>
+                            </tr>
+                            <tr>
+                                <td>界面控制</td>
+                                <td>5键数字按键</td>
+                            </tr>
+                            <tr>
+                                <td>按键功能</td>
+                                <td>POWER、MENU、UP、DOWN、AUTO/EXIT</td>
+                            </tr>
+                            <tr>
+                                <td>工作温度</td>
+                                <td>-20℃~+60℃</td>
+                            </tr>
+                            <tr>
+                                <td>工作湿度</td>
+                                <td>50～95%RH，无腐蚀性气体环境</td>
+                            </tr>
+                            <tr>
+                                <td>存储温度</td>
+                                <td>-50℃~+70℃</td>
+                            </tr>
+                            <tr>
+                                <td>存储湿度</td>
+                                <td>0～95%RH，无腐蚀性气体环境</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="news-item-5-2" class="modal">
+            <!--模态框内容-->
+            <div class="modal-content">                 
+                <div class="product-header">
+                    <p style="margin-left: 90%; color:silver">点击框外即可退出</p>
+                    <h2 style="text-align: center;"><strong>国产化显控板</strong></h2>
+                </div>
+                <hr>
+                <div class="container">
+                    <div id="introduction">
+                        <div class="text">
+                            <img style="width: 50%; margin-left: 15vw;" src="css/image/product/显控板/国产化显控板.png">
+                        </div>
+                    </div>
+                    <table class="table">
+                        <h3 style="text-align: left; background-color: rgb(30, 100, 165);"><strong style="color: white;">产品参数</strong></h3>
+                        <tbody>
+                            <tr>
+                                <td>板卡尺寸</td>
+                                <td>140mm*108mm</td>
+                            </tr>
+                            <tr>
+                                <td>驱屏接口LVDS</td>
+                                <td>1路，支持最大10bit FULL HD LVDS屏，分辨率为1920*1080</td>
+                            </tr>
+                            <tr>
+                                <td>输入信号接口AV</td>
+                                <td>2路，支持AV或CVBS</td>
+                            </tr>
+                            <tr>
+                                <td>输入信号接口YPbPr</td>
+                                <td>1路</td>
+                            </tr>
+                            <tr>
+                                <td>输入信号接口VGA</td>
+                                <td>1路</td>
+                            </tr>
+                            <tr>
+                                <td>输入信号接口HDMI</td>
+                                <td>3路，HDMIA/HDMIB可择一路支持MHL</td>
+                            </tr>
+                            <tr>
+                                <td>输入信号接口Line in</td>
+                                <td>3路，其中1路接功放作为喇叭输出</td>
+                            </tr>
+                            <tr>
+                                <td>输出信号接口CVBSO</td>
+                                <td>3路，其中1路接功放作为喇叭输出</td>
+                            </tr>
+                            <tr>
+                                <td>输出信号接口LVDS</td>
+                                <td>1路，支持最大10bit FULL HD LVDS屏，分辨率为1920*1080</td>
+                            </tr>
+                            <tr>
+                                <td>输出信号接口HDMI</td>
+                                <td>1路，环出HDMIA信号</td>
+                            </tr>
+                            <tr>
+                                <td>输出信号接口Line out</td>
+                                <td>2路</td>
+                            </tr>
+                            <tr>
+                                <td>通讯接口USB2.0</td>
+                                <td>2路</td>
+                            </tr>
+                            <tr>
+                                <td>输出信号接口UART</td>
+                                <td>2路,TTL电平</td>
+                            </tr>
+                            <tr>
+                                <td>输出信号接口IRDA</td>
+                                <td>1路</td>
+                            </tr>
+                            <tr>
+                                <td>反转功能</td>
+                                <td>0度、180度</td>
+                            </tr>
+                            <tr>
+                                <td>环出</td>
+                                <td>环出HDMIA信号(预留)</td>
+                            </tr>
+                            <tr>
+                                <td>PWM接口</td>
+                                <td>支持PWM方式和电压方式</td>
+                            </tr>
+                            <tr>
+                                <td>恒流源接口</td>
+                                <td>最大支持60V,3A</td>
+                            </tr>
+                            <tr>
+                                <td>自动背光</td>
+                                <td>根据环境光自动调节背光亮度；</td>
+                            </tr>
+                            <tr>
+                                <td>工作电压</td>
+                                <td>12V</td>
+                            </tr>
+                            <tr>
+                                <td>驱屏电压</td>
+                                <td>3.3V或5V或12V</td>
+                            </tr>
+                            <tr>
+                                <td>电源模式</td>
+                                <td>支持低功耗模式，待机模式</td>
+                            </tr>
+                            <tr>
+                                <td>OSD 语言</td>
+                                <td>英语，中文</td>
+                            </tr>
+                            <tr>
+                                <td>操作界面</td>
+                                <td>OSD菜单</td>
+                            </tr>
+                            <tr>
+                                <td>界面控制</td>
+                                <td>5键数字按键</td>
+                            </tr>
+                            <tr>
+                                <td>按键功能</td>
+                                <td>POWER、MENU、UP、DOWN、AUTO/EXIT</td>
+                            </tr>
+                            <tr>
+                                <td>工作温度</td>
+                                <td>-20℃~+60℃</td>
+                            </tr>
+                            <tr>
+                                <td>工作湿度</td>
+                                <td>50～95%RH，无腐蚀性气体环境</td>
+                            </tr>
+                            <tr>
+                                <td>存储温度</td>
+                                <td>-50℃~+70℃</td>
+                            </tr>
+                            <tr>
+                                <td>存储湿度</td>
+                                <td>0～95%RH，无腐蚀性气体环境</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>                                                                                  
+</body>
+<!--bottom-->
+<footer id="footer" class="panel-footer" style="width: 100%; height: auto; overflow: hidden; background-color: rgb(63, 63, 63);">
+    <div class="container reveal-ele">
+        <div class="row footer-top" style="text-align: center;">
+            <img src="css/image/logo.png">
+        </div>
+        <hr style="border: 1px  solid #ffffff;">
+        <div class="row" style="text-align: center;">
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <a href="#" style=" color: rgb(28, 85, 255);">产品中心</a>
+                <ul style="text-align: center; list-style: none;">
+                    <li><a href="product-center.html">军工加固设备</a></li>
+                    <li><a href="product-center.html#highspeed-platform">高速计算平台</a></li>
+                    <li><a href="product-center.html#3D">3D智能</a></li>
+                    <li><a href="product-center.html"><span class="glyphicon glyphicon-chevron-right right"></span>更多</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <a href="#" style=" color: rgb(4, 150, 255);">解决方案</a>
+                <ul style="text-align: center; list-style: none;">
+                    <li><a href="solutions.html">军工加固设备方案</a></li>
+                    <li><a href="solutions.html#UAV">无人机及应用方案</a></li>
+                    <li><a href="solutions.html#oil-field">油田勘测系统方案</a></li>
+                    <li><a href="solutions.html"><span class="glyphicon glyphicon-chevron-right right"></span>更多</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <a href="#" style=" color: rgba(51, 178, 210);">关于我们</a>
+                <ul style="text-align: center; list-style: none;">
+                    <li><a href="about-us.html">关于亿旗</a></li>
+                    <li><a href="about-us.html">公司资质</a></li>
+                    <li><a href="about-us.html">公司业务</a></li>
+                    <li><a href="about-us.html"><span class="glyphicon glyphicon-chevron-right right"></span>更多</a></li>
+                </ul>
+            </div>
+            <div id="information" class="col-sm-3 col-md-3 col-lg-3">
+                <a href="#" style=" color: gray;">联系我们</a>
+                <ul style="width:15vw; text-align: left; margin-left: 30%">
+                    <li>地址：北京市丰台区方庄芳城园一区日月天地B座8层803</li>
+                    <li>电话：<p>(010) 58075420/21/23 </p>
+                              <p>(010) 58076841/42/43</p>
+                    </li>
+                    <li>传真：010-58076841/42-1023(分机)</li>
+                    <li> 京ICP备16057375号-2</li>
+                    <li>邮编：100078</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+ </footer>
+<!--public file-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<!--self file-->
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    var hash = location.hash;//获取到跳转页面的参数
+	var tab = $('.nav-tabs li');
+	var con = $('.tab-content .tab-pane');
+	for(var i=0;i<con.length;i++){
+		var mm = con[i];
+		var selectCon = "#"+ $(mm).attr('id');
+		if(hash == selectCon){
+			tab.siblings().removeClass('active');
+			con.siblings().removeClass('active');
+            con.siblings().addClass('select')
+			$(tab[i]).addClass('active');
+			$(con[i]).addClass('active');
+		}
+	}
+</script>
+</html>

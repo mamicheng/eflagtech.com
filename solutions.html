@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>亿旗-解决方案</title>
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/solution.css">  
+</head>
+<body oncontextmenu = "return false" oncopy = "return false" onselectstart = "return false">
+    <!--header导航栏-->
+    <nav id="header" class="header">
+        <div class="logo"></div>
+        
+        <ul id="navbar" class="navbar">
+            <li class="active"><a href="main.html">首页</a></li>
+            <!--产品中心下拉菜单-->
+            <li id="prodct-page" class="dropdown">
+                <a class="dropdown-toggle" href="product-center.html" data-toggle="dropdown" aria-expanded="true">产品中心<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="product-center.html#mulitary" style="color: grey;">军工加固设备</a></li>
+                    <li><a class="dropdown-item" href="product-center.html#highspeed-platform" style="color: grey;">高速计算平台</a></li>
+                    <li><a class="dropdown-item" href="product-center.html#3D" style="color: grey;">3D智能</a></li>
+                    <li><a class="dropdown-item" href="product-center.html#highspeed-processor" style="color: grey;">高速处理板</a></li>
+                    <li><a class="dropdown-item" href="product-center.html#显控板类" style="color: grey;">显控板</a></li>
+                </ul>
+            </li>
+            <!--解决方案下拉菜单-->
+            <li id="solution-page" class="dropdown">
+                <a class="dropdown-toggle" href="solutions.html" data-toggle="dropdown" aria-expanded="true">解决方案<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="solutions.html#mulitary" style="color: grey;">军工加固设备方案</a></li>
+                    <li><a class="dropdown-item" href="solutions.html#UAV" style="color: grey;">无人机应用方案</a></li>
+                    <li><a class="dropdown-item" href="solutions.html#electricity" style="color: grey;">电力设计方案</a></li>
+                    <li><a class="dropdown-item" href="solutions.html#camera" style="color: grey;">3D智能相机</a></li>
+                    <li><a class="dropdown-item" href="solutions.html#graphic" style="color: grey;">高速图像处理</a></li>
+                    <li><a class="dropdown-item" href="solutions.html#GIS" style="color: grey;">GIS系统方案</a></li>
+                </ul>
+            </li>
+            <li><a href="about-us.html">关于我们</a></li>
+            <li><a href="#footer">联系我们</a></li>
+        </ul>
+        <button style="background-color: transparent;" id="menuIcon" type="button" class="btn btn-lg" onclick="navbarToggle()">
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
+    </nav>
+    <!--hero-image大头图-->
+    <div class="hero-image">
+        <div>
+            <h3 style="overflow-y: hidden;">亿旗创新秉承专注精神，潜心致力于嵌入式领域的开拓，在消费类电子、嵌入式系统、汽车电子、工业控制等行业打造出多款精品</h3>
+        </div>
+    </div>
+    <!--solution-container解决方案-->
+    <div class="solution-container">
+        <div id="buttons" data-toggle="buttons" class="btn-group" style="margin-top: 5vw;margin-bottom: 5vw;">
+            <label class="btn btn-default" data-toggle="tab" href="#mulitary"><input type="radio">军工加固设备方案</label>
+            <label class="btn btn-default" data-toggle="tab" href="#UAV"><input type="radio">无人机应用方案</label>
+            <label class="btn btn-default" data-toggle="tab" href="#electricity"><input type="radio">电力设计方案</label>
+            <label class="btn btn-default" data-toggle="tab" href="#camera"><input type="radio">3D智能相机</label>
+            <label class="btn btn-default" data-toggle="tab" href="#graphic"><input type="radio">高速图像处理</label>
+            <label class="btn btn-default" data-toggle="tab" href="#GIS"><input type="radio">GIS系统方案</label>
+        </div>
+        <!--全部方案-->
+        <div id="solution" class="tab-content">
+            <!--军工加固-->
+            <div id="mulitary" class="row tab-pane fade active in">
+                <div class="col-sm-6 col-md-4">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="国产化解决方案" onclick="showModal('news-item-1-1','国产化解决方案')"><img src="css/image/solution/国产化/国产化.jpg"></a>
+                        <div class="caption">
+                            <h3>国产化解决方案</h3>
+                            <button id="了解更多-国产化解决方案" onclick="showModal('news-item-1-1','了解更多-国产化解决方案')" class="btn btn-primary" role="button">了解更多</button>
+                        </div>
+                    </div>
+                </div>         
+                <div class="col-sm-6 col-md-4">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="加固显示器" onclick="showModal('news-item-1-2','加固显示器')"><img style="height: 15vw;" src="css/image/solution/加固显示器/加固显示器.jpg" alt="..."></a>
+                        <div class="caption">
+                            <h3>加固显示器</h3>
+                            <a id="了解更多-加固显示器" onclick="showModal('news-item-1-2','了解更多-加固显示器')" class="btn btn-primary" role="button">了解更多</a>
+                        </div>
+                    </div>                
+                </div>     
+            </div>
+            <!--无人机-->
+            <div id="UAV" class="row tab-pane fade">
+                <div class="col-sm-6 col-md-4">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="图像目标识别跟踪器" onclick="showModal('news-item-1-3','图像目标识别跟踪器')"><img src="css/image/solution/目标识别跟踪器/目标识别跟踪器-2.png" alt="..."></a>
+                        <div class="caption">
+                            <h3>图像目标识别跟踪器</h3>
+                            <a id="了解更多-图像目标识别跟踪器" onclick="showModal('news-item-1-3','了解更多-图像目标识别跟踪器')" class="btn btn-primary" role="button">了解更多</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="无人机目标定位系统" onclick="showModal('news-item-1-4','无人机目标定位系统')"><img style="height:15vw;" src="css/image/solution/无人机目标定位系统/无人机目标定位系统-1.jpg"></a>
+                        <div class="caption">
+                            <h3>无人机目标定位系统</h3>
+                            <a id="了解更多-无人机目标定位系统" onclick="showModal('news-item-1-4','了解更多-无人机目标定位系统')" class="btn btn-primary" role="button">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="无人机全自动巡逻方案" onclick="showModal('news-item-1-12','无人机全自动巡逻方案')"><img style="height:15vw;" src="css/image/solution/无人机全自动巡逻路线/无人机全自动巡逻.png"></a>
+                        <div class="caption">
+                            <h3>无人机巡管线方案</h3>
+                            <a id="了解更多-无人机全自动巡逻方案" onclick="showModal('news-item-1-12','了解更多-无人机全自动巡逻方案')" class="btn btn-primary" role="button">了解更多</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!--电力-->
+            <div id="electricity" class="row tab-pane fade">
+                <div class="col-sm-6 col-md-4">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="BF518工控设计方案" onclick="showModal('news-item-1-7','BF518工控设计方案')"><img src="css/image/solution/BF518/BF518-3.jpg" alt="..."></a>
+                        <div class="caption" style="margin-top: 3vw;">
+                            <h3>BF518工控设计方案</h3>
+                            <a id="了解更多-BF518工控设计方案" onclick="showModal('news-item-1-7','了解更多-BF518工控设计方案')" class="btn btn-primary" role="button">了解更多</a>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+            <!--3D智能相机-->
+            <div id="camera" class="row tab-pane fade">
+                <div class="col-sm-6 col-md-4">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="TOF3D" onclick="showModal('news-item-1-11','TOF3D')"><img style="width:90%" src="css/image/solution/3D/3D-1.jpg"></a>
+                        <div class="caption">
+                            <h3>TOF 3D视觉方案</h3>
+                            <a id="了解更多-TOF3D" onclick="showModal('news-item-1-11','了解更多-TOF3D')" class="btn btn-primary" role="button">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--高速图像处理-->
+            <div id="graphic" class="row tab-pane fade">
+                <div class="col-sm-6 col-md-4">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="高速图像处理系统" onclick="showModal('news-item-1-5','高速图像处理系统')"><img src="css/image/solution/高速图像处理系统/高速图像处理系统-1.png" alt="..."></a>
+                        <div class="caption" style="margin-top: 2vw;">
+                            <h3>高速图像处理系统</h3>
+                            <a id="了解更多-高速图像处理系统" onclick="showModal('news-item-1-5','了解更多-高速图像处理系统')" class="btn btn-primary" role="button">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                     <!--缩略图-->
+                     <div class="card thumbnail">
+                        <a id="高速信息处理系统" onclick="showModal('news-item-1-6','高速信息处理系统')"><img src="css/image/solution/高速信息处理系统/高速信息处理系统.png" alt="..."></a>
+                        <div class="caption">
+                            <h3>高速信息处理系统</h3>
+                            <a id="了解更多-高速信息处理系统" onclick="showModal('news-item-1-6','了解更多-高速信息处理系统')" class="btn btn-primary" role="button">了解更多</a>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+            <!--GIS-->
+            <div id="GIS" class="row tab-pane fade">
+                <div class="col-sm-6 col-md-4">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                       <a id="船舶地理信息应用系统" onclick="showModal('news-item-1-8','船舶地理信息应用系统')"><img src="css/image/solution/船舶地理信息应用系统/船舶地理信息应用系统.jpg"></a>
+                       <div class="caption" style="margin-top: 2vw;">
+                           <h3>船舶地理信息应用系统</h3>
+                           <a id="了解更多-船舶地理信息应用系统" onclick="showModal('news-item-1-8','了解更多-船舶地理信息应用系统')" class="btn btn-primary" role="button">了解更多</a>
+                       </div>
+                   </div>            
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <!--缩略图-->
+                    <div class="card thumbnail">
+                        <a id="DCMap-Platform" onclick="showModal('news-item-1-9','DCMap-Platform')"><img src="css/image/solution/DCMap Platform/DCMap Platform.png"></a>
+                        <div class="caption" style="margin-top: 2.5vw;">
+                            <h3>地理信息共享交换服务平台</h3>
+                            <a id="了解更多-DCMap-Platform" onclick="showModal('news-item-1-9','了解更多-DCMap-Platform')" class="btn btn-primary" role="button">了解更多</a>
+                        </div> 
+                    </div>         
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--模态框内容-->
+            <!--军工加固方案-->
+                <!--国产化解决方案-->
+    <div id="news-item-1-1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p style="margin-left: 71.5vw; color:silver">点击框外即可退出</p>
+                <h1>国产化解决方案</h1>
+            </div>
+            <img style="margin-left:20vw; width: 50%;" src="css/image/solution/国产化/国产化.jpg">
+            <div class="modal-body">
+                <h4 id="date" style="font-weight: bold;">北京亿旗创新科技发展有限公司提供基于国产处理器的嵌入式解决方案，可支持产品单板或系统集成定制，实现从硬件到操作系统的完全国产化。</h4>
+                <p><strong>嵌入式低功耗显控解决方案：</strong>此类产品以嵌入式处理器和嵌入式处理器加专业显示芯片两种方式为基本的硬件架构，产品具有集成度高，接口丰富、低功耗、环境适应性好等特点，提供高分辨率的显示输出接口，还可以提供视频叠加输入接口，同时为用户提供以太网、CAN等丰富的外围通信接口。特别适合再安装空间狭小、具有低功耗要求和恶劣工作环境下使用。</p>
+
+                <p><strong>音视频处理解决方案：</strong>该系列产品可以用于采集、记录用户系统、设备本身的输出数据与工作现场环境数据，数据采集类型囊括了视频、音频、按键操作、通用总线数据（如以太网数据、RS485总线数据等）、专用总线数据（如ARINC 429、1553B、CAN总线数据等）。配合上位机回放应用软件，可对采集的数据以时间基准、文件、特殊数据类型的方式进行回放、分析，可广泛应用于系统、设备现场工况分析、故障诊断专家系统、健康状态大数据分析、工业控制、工业生产全过程监控等领域。</p>
+            </div>
+        </div>
+    </div>
+                <!--加固显示器-->
+    <div id="news-item-1-2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p style="margin-left: 71.5vw; color:silver">点击框外即可退出</p>
+                <h1>加固显示器</h1>
+                <img style="width: 50%;" src="css/image/solution/加固显示器/加固显示器.jpg">
+            </div>
+            <div class="modal-body">
+                <p>北京亿旗创新科技发展有限公司推出高性能加固显示器，采用全金属外壳结构，表面采用防刮涂层处理，内部增加橡胶夹层保护，显示器具备一定初级加固能力，抗振能力。振动等级可达振动频率范围5Hz-16Hz,单振幅位移1mm,振动频率范围16Hz-60Hz,加速度1g下纵轴方向振动20min.</p>
+                <img src="css/image/solution/加固显示器/加固显示器-2.png" style="margin-left:15vw;width: 50%;">
+                <hr>
+                <p><strong>主要参数：</strong></p>
+                <img src="css/image/solution/加固显示器/加固显示器-3.png" style="margin-left:15vw;width: 50%;">
+            </div>
+        </div>
+    </div>
+            <!--无人及应用方案-->
+                <!--图像目标识别跟踪器-->
+    <div id="news-item-1-3" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p style="margin-left: 71.5vw; color:silver">点击框外即可退出</p>
+                <h1>基于双C6678 DSP 阵列的图像目标识别跟踪器</h1>
+                <h1>（型号：EF-DSP-6678D-A01）</h1>
+            </div>
+            <div class="modal-body">
+                <p><strong>基于双C6678 DSP 阵列的图像信息处理单元</strong></p>
+                <p>基于双C6678 DSP 阵列的图像信息处理单元核心由两片TMS320C6678 DSP 处理器与一片CycloneIII FPGA 组成，内部结构框图如图2 所示。每颗DSP 均配备四片16 位128MB 共512MB DDR3 存储器，以保证每一片DSP能够达到64 位1600MHz 外部数据访问性能。一片256MB 的NAND FLASH 用于预存图像数据，一片32MB NOR FLASH 通过EMIF 接口直接与系统内部总线相连，作为上电引导程序存储器，同时预留一片EEPROM 作为上电引导备用存储器。两颗DSP 之间使用HyperLink 总线和2 通道串行RapidIO 互连。HyperLink 总线最高提供50Gbps 传输速率传输速率，单路串行RapidIO 最高提供5Gbps 传输速率。这一设计保证了两颗DSP 之间进行数据交换的最大性能，提高了两片DSP协同工作的工作效率，为海量实时数据处理提供了强大的支撑。除高速串行接口外，两颗DSP 将GPIO、定时器、复位控制管脚、UART、SPI均连接至CycloneIII FPGA，作为命令传输及控制通道。</p>
+                <img style="width: 50%;margin-left: 25%;" src="css/image/solution/目标识别跟踪器/目标识别跟踪器-2.png">
+                <img style="width: 50%;margin-left: 25%;" src="css/image/solution/目标识别跟踪器/目标识别跟踪器.png">
+                <p>CycloneIII FPGA 作为图像信息处理单元的逻辑控制核心，与两颗DSP、电源电路、时钟产生单元相连，完成系统上电逻辑控制、各数据缓冲器使能、时钟芯片烧写配置、DSP 低速通信接口电平转换等工作，保证系统稳定有序地运行。FPGA外部配备EPCS16 配置FLASH，50MHz 有源晶振为板内上电时序逻辑提供参考时钟</p>
+                <p>整板对外提供高速串行接口包括：四路SRIO 接口、四路PCIe 接口、四路SGMII接口，充足的高速接口为多DSP 图像信息处理阵列的设计任务预留了足够的扩展空间。图像信息处理单元采用单一5V 直流供电，最大电流6A</p>
+                <p>图像目标实时跟踪算法特点：</p>
+                <p>（1）6678DSP 端图像目标跟踪实时处理，包括SYS/BIOS，模拟视频采集、红外图像与可见光图像融合算法，图像目标跟踪算法，以太网通信等部分。</p>
+                <p> 图像融合算法，融合实时性小于40ms；</p>
+                <p>图像目标识别跟踪算法,实时性均达到200ms 以内</p>
+                <p>（2）PC 机基于OPENCV 平台的上层软件，包括软件参数控制界面，跟踪图像实时显示等部分，并提供6678DSP 端图像融合算法和图像目标识别跟踪算法的OPENCV 算法工程原型。</p>
+                <img style="width: 50%;margin-left: 25%;" src="css/image/solution/目标识别跟踪器/目标识别跟踪器-3.png">
+                <img style="width: 50%;margin-left: 25%;" src="css/image/solution/目标识别跟踪器/目标识别跟踪器-4.png">
+            </div>
+        </div>
+    </div>
+                <!--无人机目标定位系统-->
+    <div id="news-item-1-4" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p style="margin-left: 71.5vw; color:silver">点击框外即可退出</p>
+                <h1>无人机目标定位系统</h1>
+                <img src="css/image/solution/无人机目标定位系统/无人机目标定位系统-1.jpg">
+            </div>
+            <div class="modal-body">
+                <p><strong>无人机系统平台概述</strong></p>
+                <p>无人机系统主要包括：机载平台、任务载荷、地面站、数据链系统。系统主要是通过CCD 将采集到的图像信息，传输到任务载荷进行图像跟踪处理，最终通过飞控实现无人机的定点飞行，同时将实时采集的视频信息和飞控参数通过数据链系统传输到地面站，实现机载平台对地面站的信息接收和指令发送。</p>
+                <p>机载平台主要包括GPS、飞控模块、系统电源模块以及无人机平台。任务载荷包括：稳像记录模块、导航姿态模块、可见光摄像机、惯导模块、地磁模块、云台、图像信息处理跟踪模块、短波红外传感器和中波红外传感器。地面站包括：处理模块。数据链路：主要包括机载平台上的飞控数传模块、任务载荷上的任务数传模块与任务图传模块，地面站的飞控数传模块、任务数传模块与任务图传模块。</p>
+                <p><strong>无人机平台：</strong></p>
+                <img style="margin-left: 30%;" src="css/image/solution/无人机目标定位系统/无人机目标识别系统-2.png">
+                <p>机载平台主要包括GPS、飞控模块、系统供电以及无人机平台。GPS 将采集到的信息通过UART 发送到飞控模块，飞控模块将飞行参数信息和GPS 信息整合后通过数传发送到地面站。系统通过飞控模块控制无人机的飞行。供电系统，通过电池提供22V 直流电压，经过电源模块转换出5V 电压供飞控模块，并通过DC-DC 转换成12V 电压，为稳像模块、导航姿态模块、摄像头和图像信息处理模块供电。</p>
+                <p><strong>无人机技术参数如下：</strong></p>
+                <p>轴距：1600mm</p>
+                <p>载重：不小于8kg</p>
+                <p>飞行高度：不小于200 米</p>
+                <p>飞行时间(电池充满)：不小于30 分钟</p>
+                <p>安全飞行速度：15 米/秒以内</p>
+            </div>
+        </div>
+    </div>
+                <!--无人机巡管线方案-->
+    <div id="news-item-1-12" class="modal">
+        <div class="modal-content">
+            <div class="modal-header"   >
+                <p style="margin-left: 91%; color:silver">点击框外即可退出</p>
+                <h1>无人机巡管线方案</h1>
+            </div>
+            <div class="container" style="width: 90%; text-align: center; margin-left: 10%;">
+                <div id="progress-area" style="display: flex; width: 95%; text-align: center;">
+                    <div class="procedure" id="pro-1">
+                        <div id="solution-sample">
+                            <img src="css/image/solution/无人机全自动巡逻路线/无人机全自动巡逻.png">
+                        </div>
+                        <p>——</p>
+                        <p>无人机全自动进行石化管道巡检工作，单天巡检效率较之传统巡检方式，作业效率提高约10倍</p>
+                    </div>
+                    <div class="procedure" id="pro-2">
+                        <div id="solution-sample">
+                            <img src="css/image/solution/无人机全自动巡逻路线/无人机全自动巡逻-2.png">
+                        </div>
+                        <p>——</p>
+                        <p>无需专业无人机飞手，极大减轻了巡检作业人员的劳动强度和劳动时间；长输管道巡检，自动充换电，稳定持续作业</p>
+                    </div>
+                    <div class="procedure" id="pro-3">
+                        <div id="solution-sample">
+                            <img src="css/image/solution/无人机全自动巡逻路线/无人机全自动巡逻-3.png">
+                        </div>
+                        <p>——</p>
+                        <p>全方位监控，高空视野，三维立体监控，及时发现异常情况；自动识别管道泄漏区域，监测偷盗油等违法行为，以及温度异常区域识别报警</p>
+                    </div>
+                    <div class="procedure" id="pro-4">
+                        <div id="solution-sample">
+                            <img src="css/image/solution/无人机全自动巡逻路线/无人机全自动巡逻-4.png">
+                        </div>
+                        <p>——</p>
+                        <p>巡检结束，自动出具本次巡检结果，一般包括巡检路线总图、巡检路线标识记录，异常点照片，文字描述，单独显示详情</p>
+                    </div>
+                </div>
+                <hr>
+                <div id="value" style="width:90%;">
+                    <div id="text" style="width: 100%; text-align: center;">
+                        <h2><strong>方案价值</strong></h2>
+                        <p>全自动巡检减轻巡检人员的劳动强度和劳动时间，实时处理能力提升无人机巡检效率和巡检质量。</p>
+                    </div>
+                    <div id="value-group" style="display: flex; width: 100%;">
+                        <div class="value-item">
+                            <img src="css/image/solution/无人机全自动巡逻路线/方案价值.png">
+                            <h4>解放人工</h4>
+                        </div>
+                        <div class="value-item">
+                            <img src="css/image/solution/无人机全自动巡逻路线/方案价值-2.png">
+                            <h4>提升效率</h4>
+                        </div>
+                        <div class="value-item">
+                            <img src="css/image/solution/无人机全自动巡逻路线/方案价值-3.png">
+                            <h4>高频作业</h4>
+                        </div>
+                        <div class="value-item">
+                            <img src="css/image/solution/无人机全自动巡逻路线/方案价值-4.png">
+                            <h4>智能化</h4>
+                        </div>
+                        <div class="value-item">
+                            <img src="css/image/solution/无人机全自动巡逻路线/方案价值-5.png">
+                            <h4>便捷管理</h4>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div id="feature" style="width: 90%;">
+                    <div id="text" style="width: 100%; text-align: center;">
+                        <h2><strong>方案特点</strong></h2>
+                        <p>石化管道自动巡检系统实现野外无人值守，一键起飞，自动巡逻，提高了无人机巡逻效率</p>
+                    </div>
+                    <div id="feature-group" style="display: flex; width:100%">
+                        <div class="feature-item">
+                            <div id="solution-sample">
+                                <img style="height:96%" src="css/image/solution/无人机全自动巡逻路线/方案特点-1.jpg">
+                                <h4>3D-GIS规划航迹</h4>
+                            </div>
+                            <p>基于3D-GIS，系统自动规划无人机航线，实现相对于路面海拔高度的一致飞行</p>
+                        </div>
+                        <div class="feature-item">
+                            <div id="solution-sample">
+                                <img style="height:96%" src="css/image/solution/无人机全自动巡逻路线/方案特点-2.jpg">
+                                <h4>自动起降换电</h4>
+                            </div>
+                            <p>自动机场就近部署在作业现场，自动起飞，高精度视觉自动降落。自动进行电池更换，支持高频作业，三分钟即可再次起飞作业</p>
+                        </div>
+                        <div class="feature-item">
+                            <div id="solution-sample">
+                                <img style="height:96%" src="css/image/solution/无人机全自动巡逻路线/方案特点-3.png">
+                                <h4>自动识别、锁定与拍摄</h4>
+                            </div>
+                            <p>通过图像识别技术实时对管道特征目标进行精确定位，实时控制云台对目标进行跟踪拍摄，通过图像识别精准拍摄目标对象，实现管道偷盗油孔、管道裂纹的识别与发现</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <!--高速图像处理方案-->
+                <!--高速图像处理系统-->
+    <div id="news-item-1-5" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p style="margin-left: 71.5vw; color:silver">点击框外即可退出</p>
+                <h1>高速复杂可重构图像并行处理系统</h1>
+            </div>
+            <div class="modal-body">
+                <p>高速复杂可重构图像并行处理系统采用DSP和FPGA混合的架构。在DSP中实现数据处理算法；在FPGA中完成数据预处理、高速传输和其它控制逻辑。两种器件相互配合可以充分发挥各自的优势，提高系统运算性能和传输带宽。</p>
+                <p>系统的核心部分为两块多DSP 阵列信号处理板，均采用CPCI 6U 的板卡结构。一块板卡为由8 颗DSP 和3 颗FPGA 构成的共享总线型紧耦合结构处理板，另一块板卡为由6 颗DSP 和2 颗FPGA 通过链路口互连构成的分布式结构处理板。两块板卡分别通过高性能差分信号和单端信号接插件与自定义背板相连，以实现高带宽板间通信。通过背板与两块DSP 处理板相连的还有2 块接口板。接口板由Virtex-5 FPGA 和LVDS 图像接口芯片构成，负责图像的发送和接收工作。接口板上的FPGA 与DSP 处理板上的主FPGA 通过Link Port 链路口通信，实现图像传输。另外还通过LVDS 链路和Serial RapidIO 总线与DSP 处理板上的FPGA通信</p>
+                <p></p>
+                <p>本系统DSP 处理器采用业界领先的ADI 公司ADSP TS201 处理器，该处理器内核工作频率高达600MHz，有24Mb 的片内存储器。TigerSHARC 动态超标量结构使其每周期能够执行多达4 条指令，进行24 个16 位定点运算或6 个浮点运算。4 条相互独立的128 位宽度的内部数据总线连接了6 个4Mb 内部存储器，提供四字的数据、指令及I/O 访问和33.6GB/s 的内部存储器带宽</p>
+                <div style="text-align: center;">
+                    <img src="css/image/solution/高速图像处理系统/高速图像处理系统-1.png">
+                </div>
+                <p><strong>结构与功能</strong></p>
+                <p>1) 并行多处理器架构：8 颗TS201 组成共享总线型结构；</p>
+                <p>2) 8 颗TS201 通过32 位数据总线共享256Mb SDRAM存储器，共享FLASH</p>
+                <p>3) 8 颗 TS201 通过三颗FPGA 可实现两两互连，DSP 阵列拓扑结构可任意重构。其中，TS201 和FPGA 之间通过Link Port 互连，FPGA 之间通过Serial RapidIO、Link Port 和LVDS 链路互连</p>
+                <p>4) TS201 预留4 路Link Port 用于板间互连，主FPGA 提供1 路PCI-E × 1通道与系统板相连，用于高速数据传输；</p>
+                <p>5) FPGA 外接高速DDR2 SDRAM，使用SODIMM 内存接口形式，内存条的容量可以随意选择。</p>
+                <div style="text-align: center;">
+                    <img src="css/image/solution/高速图像处理系统/高速图像处理系统-2.png">
+                </div>
+                <p><strong>结构与功能</strong></p>
+                <p>1) 6 颗TS201 构成链路口互连分布式连接结构；</p>
+                <p>2) 6 颗TS201 各自拥有独立的32 位宽度的外部总线，各自拥有32MB的SDRAM 和32MB 的FLASH；</p>
+                <p>3) 6 颗TS201 通过两颗FPGA 可实现两两互连，DSP 阵列拓扑结构可任意重构。其中，TS201 和FPGA 之间通过Link Port 互连，FPGA 之间通过Serial RapidIO、Link Port 和LVDS 链路互连；</p>
+                <p>4) TS201 预留4 路Link Port 用于板间互连，主FPGA 提供1 路PCI-E × 1通道与系统板相连，用于高速传输数据；</p>
+                <p>5) FPGA 外接高速DDR2 SDRAM，使用SODIMM 内存接口形式，内存条的容量可以随意选择。基于以上硬件构架，本系统的性能指标如下：</p>
+                <p>每块DSP 处理板和整个系统的峰值并行处理能力统计如表1-1 所示。</p>
+                <div style="text-align: center;">
+                    <img src="css/image/solution/高速图像处理系统/高速图像处理系统-4.png">
+                </div>
+                <p>每块DSP 处理板的存储器资源统计如表1-2 所示</p>
+                <div style="text-align: center;">
+                    <img src="css/image/solution/高速图像处理系统/高速图像处理系统-5.png">
+                </div>
+                <p>整个系统中各数据传输总线的传输带宽统计如表1-3 所示</p>
+                <div style="text-align: center;">
+                    <img src="css/image/solution/高速图像处理系统/高速图像处理系统-6.png">
+                </div>
+            </div>
+        </div>
+    </div>
+                <!--高速信息处理系统-->
+    <div id="news-item-1-6" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p style="margin-left: 71.5vw; color:silver">点击框外即可退出</p>
+                <h1>高速信息处理系统</h1>
+            </div>
+            <div class="modal-body">
+                <p>系统采用19英寸6U 14槽标准CPCI机箱结构，含背板和各插入模块板, 采用标准CPCI连接器或CPCI-E连接器进行连接。主要由CPU系统板、1553B总线板、DSP阵列处理板、接口板等组成</p>
+                <p>DSP阵列处理板以4颗TMS320C6678（可根据项目需求扩展到6~8颗）、1颗XC7K325T FPGA为核心，采用松耦合方式互连，TMS320C6678外接1600MHz 64bit DDR3存储器接口、16bit EMIF接口外接16MB NorFlash和256MB NandFlash。FPGA同样集成外部存储器接口，设计中为每颗DSP和FPGA配有独立的DDR3 SDRAM、DDR2 SDRAM和Flash存储器芯片</p>
+                <div style="text-align: center;">
+                    <img src="css/image/solution/高速信息处理系统/高速信息处理系统.png">
+                </div>
+                <h3><strong>性能指标：</strong></h3>
+                <p><strong>处理能力</strong></p>
+                <p>每颗TMS320C6678可以实现定点320GMAC或浮点160GFLOP处理能力，4颗DSP作为业务处理单元，理论上最大可实现定点1280GMAC或640GFLOP处理性能</p>
+                <p><strong>存储器资源</strong></p>
+                <p>每颗TMS320C6678配置两片DDR3 SDRAM，每片SDRAM存储容量为128M×16bit，工作频率为1600MHz，系统总共需要8片这样的DDR3 SDRAM；XC7K325T配置两片工作频率为667MHz的DDR2 SDRAM，每片存储器容量为64M×16bit。</p>
+                <p><strong>通信能力</strong></p>
+                <p>DSP间通过Hyperlink、SRIO进行互连，Hyperlink为4通道差分接口，每通道实现12.5GBaud速率，可实现50GBaud传输速率。TMS320C6678支持SRIO2.1，单通道最大传输速率为5GBaud，DSP与DSP、DSP与FPGA之间通过SRIO进行互连，能够实现3.125GBaud传输速率。FPGA通过PCI-Express、LVDS以及SRIO与背板通信，PCIE2.0每通道速率为5.0Gbps。</p>
+            </div>
+        </div>
+    </div>   
+            <!--电力设计方案-->
+                <!--BF518工控设计方案-->
+    <div id="news-item-1-7" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p style="margin-left: 71.5vw; color:silver">点击框外即可退出</p>
+                <h1>BF518工控设计方案</h1>
+            </div>
+            <div class="modal-body" style="text-align: center;">
+                <img src="css/image/solution/BF518/BF518.jpg">
+                <img src="css/image/solution/BF518/BF518-2.jpg">
+                <img src="css/image/solution/BF518/BF518-3.jpg">
+                <img src="css/image/solution/BF518/BF518-4.jpg">
+            </div>
+        </div>
+    </div>
+             <!--3D智能相机方案-->
+                <!--TOF 3D视觉方案-->
+    <div id="news-item-1-11" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p style="margin-left: 71.5vw; color:silver">点击框外即可退出</p>
+                <h1>TOF 3D视觉方案</h1>
+                <img src="css/image/solution/3D/3D-1.jpg" style="width: 50%;">
+            </div>
+            <div class="modal-body">
+                <p><strong>系统描述</strong></p>
+                <p>该系统利用TOF 3D相机探测3D信息，系统体积小巧，扫描速度快，可应用于游戏和消费电子、多媒体和广告、移动机器人、工厂自动化、安防监控、汽车辅助驾驶等领域。</p>
+                <hr> 
+                <p><strong>系统需求</strong></p>
+                <p>TOF相机</p>
+                <img src="css/image/solution/3D/3D-2.png" style="width: 50%; margin-left: 15vw">
+                <hr>
+                <p><strong>系统原理</strong>:</p>
+                <p>TOF是Time of flight的简写，直译为飞行时间的意思。所谓飞行时间法3D成像，是通过给目标连续发送光脉冲，然后用传感器接收从物体返回的光，通过探测光脉冲的飞行（往返）时间来得到目标物距离。这种技术跟3D激光传感器原理基本类似，只不过3D激光传感器是逐点扫描，而TOF相机则是同时得到整幅图像的深度信息</p>
+                <img src="css/image/solution/3D/3D-3.png" style="margin-left: 20vw">
+                <hr>
+                <p><strong>方案配置</strong></p>
+                <p>成像单元，光源单元、触发线、电源线</p>
+                <hr>
+                <p><strong>方案图片</strong></p>
+                <img src="css/image/solution/3D/3D-4.jpg" style="margin-left: 17vw">
+            </div>
+        </div>
+    </div> 
+            <!--GIS-->
+                <!--船舶地理信息应用系统-->
+    <div id="news-item-1-8" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p style="margin-left: 71.5vw; color:silver">点击框外即可退出</p>
+                <h1><strong>船舶地理信息应用系统</strong></h1>
+                <h4 style="margin: 0vw 7vw; text-align: left;"> 利用现代计算机网络技术、地理信息技术（GIS技术）、统计技术、flex富客户端技术，采用空间数据库，B/S 开发，java 跨平台部署，解决大容量终端负荷问题，实现船舶管理，重点船监控，区域监控，船舶流量统计，船舶密集度分析，以及内部船舶的调度管理安排、作业管理、应急指挥等纳入到信息化的管理当中。一方面，通过本系统的事务处理的能力对船舶进行调度管理，另一方面，通过本系统的智能化处理技术，将航标船舶作业情况及过程进行判断和记录，通过分析航标作业情况记录的信息，改善船舶的调度指挥管理。</h4>
+            </div>
+            <div class="modal-body" style="text-align: left;">
+                <div>
+                    <h3><strong>功能简介</strong></h3>
+                </div>
+                <ul>
+                    <li>人事管理：人员、部门管理。
+                    <li>船舶管理：内部船舶、外部船舶、重点船舶、船舶流量统计、船舶密集度分析、船舶碰撞、船舶动态监控、船舶历史轨迹查询、船舶航次判断及里程计算，船舶各种报警信息,船舶水域变化报告,船舶AIS信息播发等</li>
+                    <li>实现各种区域监控报警。</li>
+                    <li>航标船舶工作作业流管理,航标船舶碰撞,航标离位报警,航标离线报警,航标工作状态监控查询</li>
+                    <li>各种统计分析：船舶进入港口统计</li>
+                    <li>短信报警：手机短信自动报警。</li>
+                    <li>系统数据库管理：备份、清理、记录查询。</li>
+                </ul>
+                <div style="text-align: center;">
+                    <img src="css/image/solution/船舶地理信息应用系统/船舶地理信息应用系统-3.jpg">
+                    <hr>
+                    <img src="css/image/solution/船舶地理信息应用系统/船舶地理信息应用系统-2.jpg">
+                    <hr>
+                    <img src="css/image/solution/船舶地理信息应用系统/船舶地理信息应用系统.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+                <!--DCMap Platform-->
+    <div id="news-item-1-9" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p style="margin-left: 71.5vw; color:silver">点击框外即可退出</p>
+                <h1><strong>地理信息共享交换服务平台</strong></h1>
+            </div>
+            <div class="modal-body" style="text-align: left;">
+                <h3><strong>功能简介</strong></h3>
+                <ul style="list-style: none;">
+                    <li>DCMap Platform是集海量、多源异构空间地理信息资源的整合、管理、发布、WEB服务、应用搭建和运维保障为一体的完整的解决方案，是可以服务于政府部门、企事业单位和社会公众的综合性地理信息共享交换平台。</li>
+                    <li>DCMap SDK是为开发用户提供的2D GIS二次开发组件库，包含一套功能强大、方便易用的2D GIS二次开发组件，包括COM控件、JS类库等，使得用户通过简单编程即可将优秀的三维引擎集成到自己的系统当中，或者对现有系统进行功能拓展，从而实现基于三维的专业应用.</li>
+                    <li>DCMap SDK提供完善的帮助文档和示例代码，开发者可快速入门、掌握并上手开发</li>
+                </ul>
+                <div style="text-align: center;">
+                    <img src="css/image/solution/DCMap Platform/DCMap Platform.png">
+                    <hr>
+                    <img src="css/image/solution/DCMap Platform/DCMap Platform-2.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--bottom-->
+<footer id="footer" class="panel-footer" style="width: 100%; height: auto; overflow: hidden; background-color: rgb(63, 63, 63);">
+    <div class="container reveal-ele">
+        <div class="row footer-top" style="text-align: center;">
+            <img src="css/image/logo.png">
+        </div>
+        <hr style="border: 1px  solid #ffffff;">
+        <div class="row" style="text-align: center;">
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <a href="#" style=" color: rgb(28, 85, 255);">产品中心</a>
+                <ul style="text-align: center; list-style: none;">
+                    <li><a href="product-center.html">军工加固设备</a></li>
+                    <li><a href="product-center.html#highspeed-platform">高速计算平台</a></li>
+                    <li><a href="product-center.html#3D">3D智能</a></li>
+                    <li><a href="product-center.html"><span class="glyphicon glyphicon-chevron-right right"></span>更多</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <a href="#" style=" color: rgb(4, 150, 255);">解决方案</a>
+                <ul style="text-align: center; list-style: none;">
+                    <li><a href="solutions.html">军工加固设备方案</a></li>
+                    <li><a href="solutions.html#UAV">无人机及应用方案</a></li>
+                    <li><a href="solutions.html#oil-field">油田勘测系统方案</a></li>
+                    <li><a href="solutions.html"><span class="glyphicon glyphicon-chevron-right right"></span>更多</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <a href="#" style=" color: rgba(51, 178, 210);">关于我们</a>
+                <ul style="text-align: center; list-style: none;">
+                    <li><a href="about-us.html">关于亿旗</a></li>
+                    <li><a href="about-us.html">公司资质</a></li>
+                    <li><a href="about-us.html">公司业务</a></li>
+                    <li><a href="about-us.html"><span class="glyphicon glyphicon-chevron-right right"></span>更多</a></li>
+                </ul>
+            </div>
+            <div id="information" class="col-sm-3 col-md-3 col-lg-3">
+                <a href="#" style=" color: gray;">联系我们</a>
+                <ul style="width:15vw; text-align: left; margin-left: 30%">
+                    <li>地址：北京市丰台区方庄芳城园一区日月天地B座8层803</li>
+                    <li>电话：<p>(010) 58075420/21/23 </p>
+                              <p>(010) 58076841/42/43</p>
+                    </li>
+                    <li>传真：010-58076841/42-1023(分机)</li>
+                    <li> 京ICP备16057375号-2</li>
+                    <li>邮编：100078</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+ </footer>
+<!--public file-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery2.js"></script>
+<script type="text/javascript" src="bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+
+<!--self file-->
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    var hash = location.hash;//获取到跳转页面的参数
+	var tab = $('.btn-group label');
+	var con = $('.tab-content .tab-pane');
+	for(var i=0;i<con.length;i++){
+		var mm = con[i];
+		var selectCon = "#"+ $(mm).attr('id');
+		if(hash == selectCon){
+			tab.siblings().removeClass('active');
+			con.siblings().removeClass('active');
+            con.siblings().addClass('select')
+			$(tab[i]).addClass('active');
+			$(con[i]).addClass('active');
+		}
+	}
+</script>
+</html>

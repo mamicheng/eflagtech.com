@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>亿旗-关于我们</title>
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/about-us.css">
+</head>
+<body>
+    <!--header-->
+    <nav id="header" class="header">
+        <div class="logo"></div>
+        
+        <ul id="navbar" class="navbar">
+            <li class="active"><a href="main.html">首页</a></li>
+            <!--产品中心下拉菜单-->
+            <li id="prodct-page" class="dropdown">
+                <a class="dropdown-toggle" href="product-center.html" data-toggle="dropdown" aria-expanded="true">产品中心<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="product-center.html#mulitary" style="color: grey;">军工加固设备</a></li>
+                    <li><a class="dropdown-item" href="product-center.html#highspeed-platform" style="color: grey;">高速计算平台</a></li>
+                    <li><a class="dropdown-item" href="product-center.html#3D" style="color: grey;">3D智能</a></li>
+                    <li><a class="dropdown-item" href="product-center.html#highspeed-processor" style="color: grey;">高速处理板</a></li>
+                    <li><a class="dropdown-item" href="product-center.html#显控板类" style="color: grey;">显控板</a></li>
+                </ul>
+            </li>
+            <!--解决方案下拉菜单-->
+            <li id="solution-page" class="dropdown">
+                <a class="dropdown-toggle" href="solutions.html" data-toggle="dropdown" aria-expanded="true">解决方案<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="solutions.html#mulitary" style="color: grey;">军工加固设备方案</a></li>
+                    <li><a class="dropdown-item" href="solutions.html#UAV" style="color: grey;">无人机应用方案</a></li>
+                    <li><a class="dropdown-item" href="solutions.html#electricity" style="color: grey;">电力设计方案</a></li>
+                    <li><a class="dropdown-item" href="solutions.html#camera" style="color: grey;">3D智能相机</a></li>
+                    <li><a class="dropdown-item" href="solutions.html#graphic" style="color: grey;">高速图像处理</a></li>
+                    <li><a class="dropdown-item" href="solutions.html#GIS" style="color: grey;">GIS系统方案</a></li>
+                </ul>
+            </li>
+            <li><a href="about-us.html">关于我们</a></li>
+            <li><a href="#footer">联系我们</a></li>
+        </ul>
+        <button style="background-color: transparent;" id="menuIcon" type="button" class="btn btn-lg" onclick="navbarToggle()">
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
+    </nav>
+    <!--hero-image大头图-->
+    <div class="hero-image">
+        <div>
+            <ul>
+                <li><h1>创新，诚信，务实，高效</h1></li>
+                <li><h3 style="overflow-y: hidden;">产品质量化，服务产品化，创新持续化，管理人性化</h3></li>
+            </ul>
+        </div>
+    </div>
+    <!--path-nav路径导航-->
+    <div class="path-nav">
+        <ol class="breadcrumb" style="padding-top:1.5vw; padding-left: 16.5vw; background-color:rgb(197, 214, 224);">
+            <li><a href="#">首页</a></li>
+            <li class="active">关于我们</li>
+        </ol>
+    </div>
+    <!--contact-information-container联系方式-->
+    <div class="information-container">
+        <!--catalogue目录-->
+        <div class="catalogue tab">
+            <button class="tablinks" onclick="openCity(event, 'information')" id="defaultOpen">关于亿旗</button>
+            <button class="tablinks" onclick="openCity(event, 'certification')">公司资质</button>
+            <button class="tablinks" onclick="openCity(event, 'glories')">公司荣誉</button>
+            <button class="tablinks" onclick="openCity(event, 'partner')">合作伙伴</button>
+        </div>
+        <!--显示联系方式-->
+        <div class="show-information">
+            <div id="information" class="tabcontent">
+                <ul>
+                    <img style="margin-top:5vw;width: 40%;" src="css/image/about-us/关于亿旗/大logo.png">
+                    <li><p>北京亿旗创新科技发展有限公司（简称亿旗创新，EFLAG），注册资金910万元，专业从事嵌入式系统方案设计、地理信息系统（GIS）、全球定位系统（GPS）技术，空间信息的分析、处理、研发的高科技公司。亿旗创新从成立初期就秉承专注精神，潜心致力于DSP、ARM、SOPC、GIS技术领域的开拓，为消费类电子、多媒体、嵌入式系统、汽车电子、电力、船舶、石油、工业控制等行业提供创新的嵌入式产品方案，开发前沿和高性能的产品</p></li>
+                    <li><p>凭借领先的技术优势，亿旗创新能够轻易快捷的增减功能，为客户定制差异化的产品。亿旗创新能够提供系统设计、原理图设计、PCB layout设计、底层软件（BSP）开发、生产管理、样板调试、产线测试、以及让研发头痛的小批量元器件现货采购服务。亿旗创新专业的一条龙设计服务，涉及到底层设计服务的每一个方面，为客户想得更细，做得更多。从提供产品级底层平台，到产品化委托设计服务，我们的宗旨就是帮助客户以快的速度推出有想象力、吸引力和丰厚回报的产品，为客户提供具备完善的质量保障体系的优质产品和专业的技术服务。</p></li>
+                    <li><p>作为ADI全球设计者同盟成员（Alliance　Member），亿旗创新在2004年成为美国ANALOG DEVICES,INC.（简称ADI）正式授权的正式第三方，2007年升级成为ADI金牌认证合作伙伴，2008年获得大学计划战略合作伙伴荣誉。经过多年的努力，亿旗创新在中国推动ADSP技术应用做出了巨大贡献，同时在ADSP企业客户培训、ADI大学计划等业务取得了丰硕的成果，并与众多知名企业建立了深入的技术合作关系。2009年，亿旗创新已经从ADSP系统方案设计商和DSP算法提供商跃升成为ADI增值业务合作伙伴（简称TSP），与ADI展开关于ADSP开发工具、技术服务、芯片服务、企业培训服务、ADI大学计划等领域的全方位深入合作</p></li>>
+                    <li><p>公司经过多年的GIS应用开发，基于Web的企业级GIS解决方案非常成熟， 能基于js技术、flex技术，跨平台部署，根据不同客户群体，采用不同的后台GIS平台， 公司解决方案直接与空间数据交互，不受后台GIS平台(mapinfo、 mapgis、arcgis、supermap等） 约束，根据客户选择，能快速方便的架构任何目前国内外GIS平台，涉及国土、 林业、公安、民政、交通、消防、 金融保险行业GIS、广电网络GIS、地铁自动寻址GIS、 GPS动态监管等多种行业，为企业、政府等不同客户群提供从低成本到大项目解决方案。</p></li>
+                </ul>
+            </div>
+            <div id="certification" class="tabcontent" style="text-align: center;">
+                <img src="css/image/about-us/公司资质/营业执照.jpg" style="width:70%">
+                <hr>
+                <img src="css/image/about-us/公司资质/认证证书.jpg">
+                <hr>
+                <img src="css/image/about-us/公司资质/认证证书-EnglishVersion.jpg">
+            </div>
+            <div id="glories" class="tabcontent" style="padding:8vw; text-align: center;">
+                <img src="css/image/about-us/公司荣誉/partnership.jpg">
+                <img src="css/image/about-us/公司荣誉/certification.jpg">
+                <img src="css/image/about-us/公司荣誉/荣誉证书.jpg" style="width: 70%;">
+            </div>
+            <div id="partner" class="tabcontent" style="padding:8vw;">
+                <img src="css/image/about-us/合作伙伴/ADI.jpg">
+                <img src="css/image/about-us/合作伙伴/UDC.jpg">
+                <img src="css/image/about-us/合作伙伴/中石化.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+<!--bottom-->
+<footer id="footer" class="panel-footer" style="width: 100%; height: auto; overflow: hidden; background-color: rgb(63, 63, 63);">
+    <div class="container reveal-ele">
+        <div class="row footer-top" style="text-align: center;">
+            <img src="css/image/logo.png">
+        </div>
+        <hr style="border: 1px  solid #ffffff;">
+        <div class="row" style="text-align: center;">
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <a href="#" style=" color: rgb(28, 85, 255);">产品中心</a>
+                <ul style="text-align: center; list-style: none;">
+                    <li><a href="product-center.html">军工加固设备</a></li>
+                    <li><a href="product-center.html#highspeed-platform">高速计算平台</a></li>
+                    <li><a href="product-center.html#3D">3D智能</a></li>
+                    <li><a href="product-center.html"><span class="glyphicon glyphicon-chevron-right right"></span>更多</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <a href="#" style=" color: rgb(4, 150, 255);">解决方案</a>
+                <ul style="text-align: center; list-style: none;">
+                    <li><a href="solutions.html">军工加固设备方案</a></li>
+                    <li><a href="solutions.html#UAV">无人机及应用方案</a></li>
+                    <li><a href="solutions.html#oil-field">油田勘测系统方案</a></li>
+                    <li><a href="solutions.html"><span class="glyphicon glyphicon-chevron-right right"></span>更多</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <a href="#" style=" color: rgba(51, 178, 210);">关于我们</a>
+                <ul style="text-align: center; list-style: none;">
+                    <li><a href="about-us.html">关于亿旗</a></li>
+                    <li><a href="about-us.html">公司资质</a></li>
+                    <li><a href="about-us.html">公司业务</a></li>
+                    <li><a href="about-us.html"><span class="glyphicon glyphicon-chevron-right right"></span>更多</a></li>
+                </ul>
+            </div>
+            <div id="information" class="col-sm-3 col-md-3 col-lg-3">
+                <a href="#" style=" color: gray;">联系我们</a>
+                <ul style="width:15vw; text-align: left; margin-left: 30%">
+                    <li>地址：北京市丰台区方庄芳城园一区日月天地B座8层803</li>
+                    <li>电话：(010) 58075420/21/23 <br>
+                              (010) 58076841/42/43
+                    </li>
+                    <li>传真：010-58076841/42-1023(分机)</li>
+                    <li> 京ICP备16057375号-2</li>
+                    <li>邮编：100078</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+ </footer>
+<!--public file-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery2.js"></script>
+<!--self file-->
+<script type="text/javascript" src="js/main.js"></script>
+</html>
